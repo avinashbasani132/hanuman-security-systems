@@ -408,6 +408,8 @@ textarea.form-control {
   .footer-grid      { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom    { flex-direction: column; gap: 0.75rem; }
   .section-title    { font-size: 2rem; }
+  .logo             { font-size: 1.25rem; white-space: nowrap; }
+  .header-content .btn { padding: 0.5rem 1rem !important; font-size: 0.85rem; }
 }
 
 @media (max-width: 900px) {

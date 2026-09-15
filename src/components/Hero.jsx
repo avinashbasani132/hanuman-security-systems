@@ -40,13 +40,8 @@ const Hero = () => {
         pointerEvents: 'none',
       }} />
 
-      <div className="container" style={{ width: '100%' }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '4rem',
-          alignItems: 'center',
-        }}>
+      <div className="container" style={{ width: '100%', position: 'relative', zIndex: 1 }}>
+        <div className="hero-layout">
 
           {/* ── LEFT COLUMN ── */}
           <div className="animate-fade-in">
@@ -211,6 +206,7 @@ const Hero = () => {
               borderRadius: '16px',
               padding: '1rem 1.5rem',
               display: 'flex',
+              flexWrap: 'wrap',
               alignItems: 'center',
               gap: '1rem',
               boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
@@ -234,6 +230,23 @@ const Hero = () => {
         @keyframes pulse {
           0%, 100% { opacity: 1; transform: scale(1); }
           50% { opacity: 0.5; transform: scale(1.3); }
+        }
+        .hero-layout {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+          align-items: center;
+        }
+        @media (max-width: 900px) {
+          .hero-layout {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+          }
+        }
+        @media (max-width: 768px) {
+          .hero {
+            padding-top: 7rem !important;
+          }
         }
       `}</style>
     </section>
