@@ -68,7 +68,7 @@ const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [activeImgIdx,    setActiveImgIdx]    = useState(0);
   const [view360,         setView360]         = useState(false);
-  const { addToCart } = useCart();
+  const { cart, addToCart, updateQuantity } = useCart();
 
   // All products across every category flattened
   const allProducts = useMemo(() => Object.values(ALL_PRODUCTS).flat(), []);
@@ -321,13 +321,25 @@ const Products = () => {
                       >
                         Details
                       </button>
-                      <button 
-                        className="btn btn-primary" 
-                        style={{ flex: 1, padding: '0.55rem', fontSize: '0.82rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem' }}
-                        onClick={(e) => { e.stopPropagation(); addToCart(item); }}
-                      >
-                        Add 🛒
-                      </button>
+                      {(() => {
+                        const cartItem = cart.find(c => c.model === item.model);
+                        const qty = cartItem ? cartItem.quantity : 0;
+                        return qty > 0 ? (
+                          <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#fff5f2', border: '1px solid var(--accent-color)', borderRadius: '8px', padding: '0.3rem 0.5rem' }}>
+                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty - 1); }} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', padding: '0 0.5rem' }}>-</button>
+                            <span style={{ fontWeight: 'bold', color: 'var(--accent-color)', fontSize: '0.9rem' }}>{qty} added</span>
+                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty + 1); }} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', padding: '0 0.5rem' }}>+</button>
+                          </div>
+                        ) : (
+                          <button 
+                            className="btn btn-primary" 
+                            style={{ flex: 1, padding: '0.55rem', fontSize: '0.82rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem' }}
+                            onClick={(e) => { e.stopPropagation(); addToCart(item); }}
+                          >
+                            Add 🛒
+                          </button>
+                        );
+                      })()}
                     </div>
                   </div>
                 );
@@ -433,18 +445,30 @@ const Products = () => {
                     </p>
                   )}
                   
-                  <button 
-                    onClick={() => { addToCart(selectedProduct); closeProduct(); }}
-                    style={{
-                      background: 'var(--accent-color)', color: '#fff',
-                      border: 'none', padding: '0.8rem 1.5rem', borderRadius: '8px',
-                      fontWeight: 'bold', cursor: 'pointer', fontSize: '0.95rem',
-                      width: '100%', marginTop: '1rem',
-                      boxShadow: '0 4px 14px rgba(255, 74, 0, 0.3)'
-                    }}
-                  >
-                    Add to Cart 🛒
-                  </button>
+                  {(() => {
+                    const cartItem = cart.find(c => c.model === selectedProduct.model);
+                    const qty = cartItem ? cartItem.quantity : 0;
+                    return qty > 0 ? (
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#fff5f2', border: '2px solid var(--accent-color)', borderRadius: '8px', padding: '0.6rem 1rem', marginTop: '1rem', width: '100%' }}>
+                        <button onClick={(e) => { e.stopPropagation(); updateQuantity(selectedProduct.model, qty - 1); }} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '1.5rem', fontWeight: 'bold', cursor: 'pointer', padding: '0 1rem' }}>-</button>
+                        <span style={{ fontWeight: 'bold', color: 'var(--accent-color)', fontSize: '1rem' }}>{qty} in cart</span>
+                        <button onClick={(e) => { e.stopPropagation(); updateQuantity(selectedProduct.model, qty + 1); }} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '1.5rem', fontWeight: 'bold', cursor: 'pointer', padding: '0 1rem' }}>+</button>
+                      </div>
+                    ) : (
+                      <button 
+                        onClick={() => { addToCart(selectedProduct); }}
+                        style={{
+                          background: 'var(--accent-color)', color: '#fff',
+                          border: 'none', padding: '0.8rem 1.5rem', borderRadius: '8px',
+                          fontWeight: 'bold', cursor: 'pointer', fontSize: '0.95rem',
+                          width: '100%', marginTop: '1rem',
+                          boxShadow: '0 4px 14px rgba(255, 74, 0, 0.3)'
+                        }}
+                      >
+                        Add to Cart 🛒
+                      </button>
+                    );
+                  })()}
                 </div>
               </div>
 
