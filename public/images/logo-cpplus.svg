@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <!-- Target ring mark -->
+  <circle cx="38" cy="50" r="32" fill="#e53935" opacity="0.15"/>
+  <circle cx="38" cy="50" r="32" fill="none" stroke="#e53935" stroke-width="4"/>
+  <circle cx="38" cy="50" r="20" fill="#e53935" opacity="0.3"/>
+  <circle cx="38" cy="50" r="20" fill="none" stroke="#e53935" stroke-width="3"/>
+  <circle cx="38" cy="50" r="9" fill="#e53935"/>
+  <!-- Text CP -->
+  <text x="84" y="46" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="32" fill="#e53935" letter-spacing="-1">CP</text>
+  <!-- Text PLUS -->
+  <text x="84" y="76" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="24" fill="#ffffff" letter-spacing="4">PLUS</text>
+</svg>

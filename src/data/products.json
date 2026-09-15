@@ -1,0 +1,5069 @@
+{
+  "cameras": [
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-401T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-502T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional CP PLUS 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-803T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional CP PLUS 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-204T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional CP PLUS 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-405T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-e35a.jpg",
+        "/images/cp-e35a.jpg",
+        "/images/cp-e35a.jpg",
+        "/images/cp-e35a.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-506T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-807T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-208T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional CP PLUS 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-409T-IC",
+      "name": "4MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "4MP",
+        "ColorVu",
+        "30m IR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional CP PLUS 4MP ColorVu Bullet security camera. Features 30m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "4MP",
+        "Lens": "2.8mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-5010T-IP",
+      "name": "5MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "5MP",
+        "Solar",
+        "40m Color",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional CP PLUS 5MP Solar 4G PTZ security camera. Features 40m Color and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "5MP",
+        "Lens": "3.6mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-8011T-I",
+      "name": "8MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "8MP",
+        "Wi-Fi",
+        "80m EXIR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 8MP Wi-Fi Cube security camera. Features 80m EXIR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "8MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-e35a.jpg",
+        "/images/cp-e35a.jpg",
+        "/images/cp-e35a.jpg",
+        "/images/cp-e35a.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-2012T-I",
+      "name": "2MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "2MP",
+        "Dome",
+        "20m IR",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 2MP Dome security camera. Features 20m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "2MP",
+        "Lens": "2.8mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-4013T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-5014T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional CP PLUS 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-8015T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional CP PLUS 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-2016T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional CP PLUS 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-4017T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-e35a.jpg",
+        "/images/cp-e35a.jpg",
+        "/images/cp-e35a.jpg",
+        "/images/cp-e35a.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-5018T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-8019T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional CP PLUS 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg",
+        "/images/cp-unc-ta41l3-d.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CAM-2020T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional CP PLUS 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-401T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-502T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Hikvision 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-803T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional Hikvision 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-204T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Hikvision 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-405T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-506T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-807T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-208T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Hikvision 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-409T-IC",
+      "name": "4MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "4MP",
+        "ColorVu",
+        "30m IR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional Hikvision 4MP ColorVu Bullet security camera. Features 30m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "4MP",
+        "Lens": "2.8mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-5010T-IP",
+      "name": "5MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "5MP",
+        "Solar",
+        "40m Color",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Hikvision 5MP Solar 4G PTZ security camera. Features 40m Color and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "5MP",
+        "Lens": "3.6mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-8011T-I",
+      "name": "8MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "8MP",
+        "Wi-Fi",
+        "80m EXIR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 8MP Wi-Fi Cube security camera. Features 80m EXIR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "8MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-2012T-I",
+      "name": "2MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "2MP",
+        "Dome",
+        "20m IR",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 2MP Dome security camera. Features 20m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "2MP",
+        "Lens": "2.8mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-4013T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-5014T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Hikvision 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-8015T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional Hikvision 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-2016T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Hikvision 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-4017T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-5018T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-8019T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Hikvision 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "CAM-2020T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Hikvision 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Hikvision",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-401T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-502T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Dahua 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-803T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional Dahua 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-204T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Dahua 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-405T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-506T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-wizsense.jpg",
+        "/images/dahua-wizsense.jpg",
+        "/images/dahua-wizsense.jpg",
+        "/images/dahua-wizsense.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-807T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-208T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Dahua 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-409T-IC",
+      "name": "4MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "4MP",
+        "ColorVu",
+        "30m IR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional Dahua 4MP ColorVu Bullet security camera. Features 30m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "4MP",
+        "Lens": "2.8mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-5010T-IP",
+      "name": "5MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "5MP",
+        "Solar",
+        "40m Color",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Dahua 5MP Solar 4G PTZ security camera. Features 40m Color and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "5MP",
+        "Lens": "3.6mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-8011T-I",
+      "name": "8MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "8MP",
+        "Wi-Fi",
+        "80m EXIR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 8MP Wi-Fi Cube security camera. Features 80m EXIR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "8MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-2012T-I",
+      "name": "2MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "2MP",
+        "Dome",
+        "20m IR",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 2MP Dome security camera. Features 20m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "2MP",
+        "Lens": "2.8mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-wizsense.jpg",
+        "/images/dahua-wizsense.jpg",
+        "/images/dahua-wizsense.jpg",
+        "/images/dahua-wizsense.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-4013T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-5014T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Dahua 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-8015T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional Dahua 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-2016T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Dahua 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-4017T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-5018T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-wizsense.jpg",
+        "/images/dahua-wizsense.jpg",
+        "/images/dahua-wizsense.jpg",
+        "/images/dahua-wizsense.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-8019T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional Dahua 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "CAM-2020T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional Dahua 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "Dahua",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-401T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-502T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional EZVIZ 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-803T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional EZVIZ 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-204T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional EZVIZ 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-405T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-506T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-807T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-208T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional EZVIZ 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-409T-IC",
+      "name": "4MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "4MP",
+        "ColorVu",
+        "30m IR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional EZVIZ 4MP ColorVu Bullet security camera. Features 30m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "4MP",
+        "Lens": "2.8mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-5010T-IP",
+      "name": "5MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "5MP",
+        "Solar",
+        "40m Color",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional EZVIZ 5MP Solar 4G PTZ security camera. Features 40m Color and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "5MP",
+        "Lens": "3.6mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-8011T-I",
+      "name": "8MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "8MP",
+        "Wi-Fi",
+        "80m EXIR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 8MP Wi-Fi Cube security camera. Features 80m EXIR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "8MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-2012T-I",
+      "name": "2MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "2MP",
+        "Dome",
+        "20m IR",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 2MP Dome security camera. Features 20m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "2MP",
+        "Lens": "2.8mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-4013T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-5014T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional EZVIZ 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-8015T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional EZVIZ 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-2016T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional EZVIZ 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-4017T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-5018T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-8019T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional EZVIZ 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "CAM-2020T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional EZVIZ 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg",
+        "/images/ezviz-c8c.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-401T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-502T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional TP-Link 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-803T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional TP-Link 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-204T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional TP-Link 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-405T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-506T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-807T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-208T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional TP-Link 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-409T-IC",
+      "name": "4MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "4MP",
+        "ColorVu",
+        "30m IR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional TP-Link 4MP ColorVu Bullet security camera. Features 30m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "4MP",
+        "Lens": "2.8mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-5010T-IP",
+      "name": "5MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "5MP",
+        "Solar",
+        "40m Color",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional TP-Link 5MP Solar 4G PTZ security camera. Features 40m Color and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "5MP",
+        "Lens": "3.6mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-8011T-I",
+      "name": "8MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "8MP",
+        "Wi-Fi",
+        "80m EXIR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 8MP Wi-Fi Cube security camera. Features 80m EXIR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "8MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-2012T-I",
+      "name": "2MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "2MP",
+        "Dome",
+        "20m IR",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 2MP Dome security camera. Features 20m IR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "2MP",
+        "Lens": "2.8mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-4013T-I",
+      "name": "4MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "4MP",
+        "Bullet",
+        "30m IR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 4MP Bullet security camera. Features 30m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "4MP",
+        "Lens": "3.6mm",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-5014T-IP",
+      "name": "5MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "5MP",
+        "PTZ",
+        "40m Color",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional TP-Link 5MP PTZ security camera. Features 40m Color and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "5MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-8015T-IC",
+      "name": "8MP ColorVu Bullet Camera",
+      "type": "Camera / ColorVu Bullet",
+      "tags": [
+        "8MP",
+        "ColorVu",
+        "80m EXIR",
+        "2.8mm",
+        "24/7 Color"
+      ],
+      "desc": "Professional TP-Link 8MP ColorVu Bullet security camera. Features 80m EXIR and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "8MP",
+        "Lens": "2.8mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-2016T-IP",
+      "name": "2MP Solar 4G PTZ Camera",
+      "type": "Camera / Solar 4G PTZ",
+      "tags": [
+        "2MP",
+        "Solar",
+        "20m IR",
+        "3.6mm",
+        "IR Night Vision",
+        "Solar Powered",
+        "4G SIM",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional TP-Link 2MP Solar 4G PTZ security camera. Features 20m IR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "2MP",
+        "Lens": "3.6mm",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-4017T-I",
+      "name": "4MP Wi-Fi Cube Camera",
+      "type": "Camera / Wi-Fi Cube",
+      "tags": [
+        "4MP",
+        "Wi-Fi",
+        "30m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 4MP Wi-Fi Cube security camera. Features 30m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "4MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "30m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg",
+        "/images/ezviz-c3w-pro.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-5018T-I",
+      "name": "5MP Dome Camera",
+      "type": "Camera / Dome",
+      "tags": [
+        "5MP",
+        "Dome",
+        "40m Color",
+        "2.8mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 5MP Dome security camera. Features 40m Color and 2.8mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "5MP",
+        "Lens": "2.8mm",
+        "Night Vision": "40m Color",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg",
+        "/images/cp-usc-da24l2.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-8019T-I",
+      "name": "8MP Bullet Camera",
+      "type": "Camera / Bullet",
+      "tags": [
+        "8MP",
+        "Bullet",
+        "80m EXIR",
+        "3.6mm",
+        "IR Night Vision"
+      ],
+      "desc": "Professional TP-Link 8MP Bullet security camera. Features 80m EXIR and 3.6mm lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "8MP",
+        "Lens": "3.6mm",
+        "Night Vision": "80m EXIR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg",
+        "/images/hikvision-colorvu.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "CAM-2020T-IP",
+      "name": "2MP PTZ Camera",
+      "type": "Camera / PTZ",
+      "tags": [
+        "2MP",
+        "PTZ",
+        "20m IR",
+        "2.8-12mm Motorized",
+        "IR Night Vision",
+        "360° Pan",
+        "Auto Tracking"
+      ],
+      "desc": "Professional TP-Link 2MP PTZ security camera. Features 20m IR and 2.8-12mm Motorized lens. Ideal for residential and commercial security.",
+      "apps": "Residential, Commercial, Retail, Industrial",
+      "specs": {
+        "Brand": "TP-Link",
+        "Resolution": "2MP",
+        "Lens": "2.8-12mm Motorized",
+        "Night Vision": "20m IR",
+        "IP Rating": "IP67 Weatherproof",
+        "Material": "Metal/Plastic"
+      },
+      "images": [
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg",
+        "/images/cp-unp-d2521l10-daq.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DH-IPC-HFW5849T1-ASE-LED",
+      "name": "8MP Full-color TiOC Bullet Camera",
+      "type": "Bullet / IP TiOC",
+      "tags": [
+        "8MP 4K",
+        "TiOC (3-in-1)",
+        "Full-color 24/7",
+        "Active Deterrence",
+        "WizMind AI",
+        "IP67"
+      ],
+      "desc": "Premium 8MP TiOC bullet with full-color night vision, red/blue light deterrence, and advanced WizMind AI.",
+      "apps": "High-end Residential, Perimeter, Commercial",
+      "specs": {
+        "Brand": "Dahua",
+        "Model": "DH-IPC-HFW5849T1-ASE-LED",
+        "Type": "Bullet / IP TiOC",
+        "Resolution": "8MP 4K",
+        "Night Vision": "Full-color (White Light)",
+        "AI": "WizMind – Human/Vehicle, Tripwire",
+        "Active Deterrence": "Red & Blue strobe, Siren",
+        "PoE": "802.3af",
+        "IP Rating": "IP67"
+      },
+      "images": [
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg",
+        "/images/dahua-tioc.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-Z44R",
+      "name": "4MP Solar 4G Pan-Tilt Camera",
+      "type": "Solar / 4G LTE / Pan-Tilt",
+      "tags": [
+        "4MP QHD",
+        "Solar 7W Panel",
+        "18000mAh Battery",
+        "4G LTE SIM",
+        "350° Pan",
+        "256GB SD"
+      ],
+      "desc": "100% wire-free 4MP solar pan-tilt camera. Insert any 4G SIM – no wires, no Wi-Fi, no power socket needed.",
+      "apps": "Farms, Construction Sites, Remote Open Land, Warehouses, Forests",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Model": "CP-Z44R",
+        "Type": "Solar Pan-Tilt / 4G LTE",
+        "Resolution": "4MP (2560×1440) Quad HD",
+        "Solar Panel": "7W built-in solar panel",
+        "Battery": "18,000 mAh rechargeable lithium",
+        "Connectivity": "4G LTE SIM card slot (any operator)",
+        "Pan": "350°",
+        "Tilt": "90°"
+      },
+      "images": [
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg",
+        "/images/solar-camera.jpg"
+      ],
+      "has360": false
+    }
+  ],
+  "dvr": [
+    {
+      "brand": "CP PLUS",
+      "model": "CP-DVR-8CH-4M-1",
+      "name": "8 Channel 4MP DVR",
+      "type": "DVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 8-channel Digital Video Recorder by CP PLUS. Supports up to 4MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-DVR-16CH-5M-2",
+      "name": "16 Channel 5MP DVR",
+      "type": "DVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "5MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 16-channel Digital Video Recorder by CP PLUS. Supports up to 5MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "16",
+        "Resolution Support": "Up to 5MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-DVR-32CH-8M-3",
+      "name": "32 Channel 8MP DVR",
+      "type": "DVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "8MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 32-channel Digital Video Recorder by CP PLUS. Supports up to 8MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "32",
+        "Resolution Support": "Up to 8MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-DVR-4CH-2M-4",
+      "name": "4 Channel 2MP DVR",
+      "type": "DVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "2MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 4-channel Digital Video Recorder by CP PLUS. Supports up to 2MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "4",
+        "Resolution Support": "Up to 2MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-DVR-8CH-4M-5",
+      "name": "8 Channel 4MP DVR",
+      "type": "DVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 8-channel Digital Video Recorder by CP PLUS. Supports up to 4MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-DVR-16CH-5M-6",
+      "name": "16 Channel 5MP DVR",
+      "type": "DVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "5MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 16-channel Digital Video Recorder by CP PLUS. Supports up to 5MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "16",
+        "Resolution Support": "Up to 5MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-DVR-32CH-8M-7",
+      "name": "32 Channel 8MP DVR",
+      "type": "DVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "8MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 32-channel Digital Video Recorder by CP PLUS. Supports up to 8MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "32",
+        "Resolution Support": "Up to 8MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-DVR-4CH-2M-8",
+      "name": "4 Channel 2MP DVR",
+      "type": "DVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "2MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 4-channel Digital Video Recorder by CP PLUS. Supports up to 2MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "4",
+        "Resolution Support": "Up to 2MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-DVR-8CH-4M-1",
+      "name": "8 Channel 4MP DVR",
+      "type": "DVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 8-channel Digital Video Recorder by Hikvision. Supports up to 4MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-DVR-16CH-5M-2",
+      "name": "16 Channel 5MP DVR",
+      "type": "DVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "5MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 16-channel Digital Video Recorder by Hikvision. Supports up to 5MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "16",
+        "Resolution Support": "Up to 5MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-DVR-32CH-8M-3",
+      "name": "32 Channel 8MP DVR",
+      "type": "DVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "8MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 32-channel Digital Video Recorder by Hikvision. Supports up to 8MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "32",
+        "Resolution Support": "Up to 8MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-DVR-4CH-2M-4",
+      "name": "4 Channel 2MP DVR",
+      "type": "DVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "2MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 4-channel Digital Video Recorder by Hikvision. Supports up to 2MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "4",
+        "Resolution Support": "Up to 2MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-DVR-8CH-4M-5",
+      "name": "8 Channel 4MP DVR",
+      "type": "DVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 8-channel Digital Video Recorder by Hikvision. Supports up to 4MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-DVR-16CH-5M-6",
+      "name": "16 Channel 5MP DVR",
+      "type": "DVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "5MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 16-channel Digital Video Recorder by Hikvision. Supports up to 5MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "16",
+        "Resolution Support": "Up to 5MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-DVR-32CH-8M-7",
+      "name": "32 Channel 8MP DVR",
+      "type": "DVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "8MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 32-channel Digital Video Recorder by Hikvision. Supports up to 8MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "32",
+        "Resolution Support": "Up to 8MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-DVR-4CH-2M-8",
+      "name": "4 Channel 2MP DVR",
+      "type": "DVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "2MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 4-channel Digital Video Recorder by Hikvision. Supports up to 2MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "4",
+        "Resolution Support": "Up to 2MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-DVR-8CH-4M-1",
+      "name": "8 Channel 4MP DVR",
+      "type": "DVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 8-channel Digital Video Recorder by Dahua. Supports up to 4MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-DVR-16CH-5M-2",
+      "name": "16 Channel 5MP DVR",
+      "type": "DVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "5MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 16-channel Digital Video Recorder by Dahua. Supports up to 5MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "16",
+        "Resolution Support": "Up to 5MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-DVR-32CH-8M-3",
+      "name": "32 Channel 8MP DVR",
+      "type": "DVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "8MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 32-channel Digital Video Recorder by Dahua. Supports up to 8MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "32",
+        "Resolution Support": "Up to 8MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-DVR-4CH-2M-4",
+      "name": "4 Channel 2MP DVR",
+      "type": "DVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "2MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 4-channel Digital Video Recorder by Dahua. Supports up to 2MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "4",
+        "Resolution Support": "Up to 2MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-DVR-8CH-4M-5",
+      "name": "8 Channel 4MP DVR",
+      "type": "DVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 8-channel Digital Video Recorder by Dahua. Supports up to 4MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-DVR-16CH-5M-6",
+      "name": "16 Channel 5MP DVR",
+      "type": "DVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "5MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 16-channel Digital Video Recorder by Dahua. Supports up to 5MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "16",
+        "Resolution Support": "Up to 5MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-DVR-32CH-8M-7",
+      "name": "32 Channel 8MP DVR",
+      "type": "DVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "8MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 32-channel Digital Video Recorder by Dahua. Supports up to 8MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "32",
+        "Resolution Support": "Up to 8MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-DVR-4CH-2M-8",
+      "name": "4 Channel 2MP DVR",
+      "type": "DVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "2MP Supported",
+        "H.265+",
+        "SATA HDD",
+        "Mobile App"
+      ],
+      "desc": "High-performance 4-channel Digital Video Recorder by Dahua. Supports up to 2MP cameras.",
+      "apps": "Control Room, Shop, Office, Home",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "4",
+        "Resolution Support": "Up to 2MP",
+        "Compression": "H.265 Pro+",
+        "Storage": "Supports SATA HDD (Up to 10TB)"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "iDS-7216HUHI-M2/S",
+      "name": "16 Ch. AcuSense 5MP DVR",
+      "type": "DVR / AcuSense 16Ch",
+      "tags": [
+        "16 Channels",
+        "5MP Lite",
+        "AcuSense AI",
+        "H.265 Pro+",
+        "2× SATA",
+        "Hik-Connect"
+      ],
+      "desc": "Advanced 16-channel AcuSense DVR with deep-learning based human and vehicle classification.",
+      "apps": "Commercial, Residential, Retail",
+      "specs": {
+        "Brand": "Hikvision",
+        "Model": "iDS-7216HUHI-M2/S",
+        "Channels": "16",
+        "Supported Res": "Up to 5MP",
+        "AI": "AcuSense – False Alarm Reduction",
+        "Compression": "H.265 Pro+",
+        "HDD": "2× SATA",
+        "Mobile App": "Hik-Connect"
+      },
+      "images": [
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg",
+        "/images/dvr-recorder.jpg"
+      ],
+      "has360": false
+    }
+  ],
+  "nvr": [
+    {
+      "brand": "CP PLUS",
+      "model": "CP-NVR-8CH-8M-K1",
+      "name": "8 Channel 8MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "8",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-NVR-16CH-12M-K2",
+      "name": "16 Channel 12MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "16",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-NVR-32CH-4M-K3",
+      "name": "32 Channel 4MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "32",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-NVR-64CH-8M-K4",
+      "name": "64 Channel 8MP NVR",
+      "type": "NVR / 64Ch",
+      "tags": [
+        "64 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 64 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "64",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-NVR-4CH-12M-K5",
+      "name": "4 Channel 12MP NVR",
+      "type": "NVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 4 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "4",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-NVR-8CH-4M-K6",
+      "name": "8 Channel 4MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-NVR-16CH-8M-K7",
+      "name": "16 Channel 8MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "16",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-NVR-32CH-12M-K8",
+      "name": "32 Channel 12MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "CP PLUS",
+        "Channels": "32",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-NVR-8CH-8M-K1",
+      "name": "8 Channel 8MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "8",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-NVR-16CH-12M-K2",
+      "name": "16 Channel 12MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "16",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-NVR-32CH-4M-K3",
+      "name": "32 Channel 4MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "32",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-NVR-64CH-8M-K4",
+      "name": "64 Channel 8MP NVR",
+      "type": "NVR / 64Ch",
+      "tags": [
+        "64 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 64 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "64",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-NVR-4CH-12M-K5",
+      "name": "4 Channel 12MP NVR",
+      "type": "NVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 4 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "4",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-NVR-8CH-4M-K6",
+      "name": "8 Channel 4MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-NVR-16CH-8M-K7",
+      "name": "16 Channel 8MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "16",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HI-NVR-32CH-12M-K8",
+      "name": "32 Channel 12MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Hikvision",
+        "Channels": "32",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-NVR-8CH-8M-K1",
+      "name": "8 Channel 8MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "8",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-NVR-16CH-12M-K2",
+      "name": "16 Channel 12MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "16",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-NVR-32CH-4M-K3",
+      "name": "32 Channel 4MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "32",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-NVR-64CH-8M-K4",
+      "name": "64 Channel 8MP NVR",
+      "type": "NVR / 64Ch",
+      "tags": [
+        "64 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 64 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "64",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-NVR-4CH-12M-K5",
+      "name": "4 Channel 12MP NVR",
+      "type": "NVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 4 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "4",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-NVR-8CH-4M-K6",
+      "name": "8 Channel 4MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-NVR-16CH-8M-K7",
+      "name": "16 Channel 8MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "16",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "Dahua",
+      "model": "DA-NVR-32CH-12M-K8",
+      "name": "32 Channel 12MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "Dahua",
+        "Channels": "32",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "EZ-NVR-8CH-8M-K1",
+      "name": "8 Channel 8MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Channels": "8",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "EZ-NVR-16CH-12M-K2",
+      "name": "16 Channel 12MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Channels": "16",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "EZ-NVR-32CH-4M-K3",
+      "name": "32 Channel 4MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Channels": "32",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "EZ-NVR-64CH-8M-K4",
+      "name": "64 Channel 8MP NVR",
+      "type": "NVR / 64Ch",
+      "tags": [
+        "64 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 64 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Channels": "64",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "EZ-NVR-4CH-12M-K5",
+      "name": "4 Channel 12MP NVR",
+      "type": "NVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 4 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Channels": "4",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "EZ-NVR-8CH-4M-K6",
+      "name": "8 Channel 4MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "EZ-NVR-16CH-8M-K7",
+      "name": "16 Channel 8MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Channels": "16",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "EZVIZ",
+      "model": "EZ-NVR-32CH-12M-K8",
+      "name": "32 Channel 12MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "EZVIZ",
+        "Channels": "32",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "TP-NVR-8CH-8M-K1",
+      "name": "8 Channel 8MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "TP-Link",
+        "Channels": "8",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "TP-NVR-16CH-12M-K2",
+      "name": "16 Channel 12MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "TP-Link",
+        "Channels": "16",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "TP-NVR-32CH-4M-K3",
+      "name": "32 Channel 4MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "TP-Link",
+        "Channels": "32",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "TP-NVR-64CH-8M-K4",
+      "name": "64 Channel 8MP NVR",
+      "type": "NVR / 64Ch",
+      "tags": [
+        "64 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 64 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "TP-Link",
+        "Channels": "64",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "TP-NVR-4CH-12M-K5",
+      "name": "4 Channel 12MP NVR",
+      "type": "NVR / 4Ch",
+      "tags": [
+        "4 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 4 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "TP-Link",
+        "Channels": "4",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "TP-NVR-8CH-4M-K6",
+      "name": "8 Channel 4MP NVR",
+      "type": "NVR / 8Ch",
+      "tags": [
+        "8 Channels",
+        "4MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 8 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "TP-Link",
+        "Channels": "8",
+        "Resolution Support": "Up to 4MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "TP-NVR-16CH-8M-K7",
+      "name": "16 Channel 8MP NVR",
+      "type": "NVR / 16Ch",
+      "tags": [
+        "16 Channels",
+        "8MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 16 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "TP-Link",
+        "Channels": "16",
+        "Resolution Support": "Up to 8MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    },
+    {
+      "brand": "TP-Link",
+      "model": "TP-NVR-32CH-12M-K8",
+      "name": "32 Channel 12MP NVR",
+      "type": "NVR / 32Ch",
+      "tags": [
+        "32 Channels",
+        "12MP Recording",
+        "4K Output",
+        "H.265+",
+        "PoE Optional"
+      ],
+      "desc": "Network Video Recorder for IP cameras. 32 channels with high bandwidth capacity.",
+      "apps": "Enterprise, Large Retail, Warehouses",
+      "specs": {
+        "Brand": "TP-Link",
+        "Channels": "32",
+        "Resolution Support": "Up to 12MP",
+        "Output": "4K HDMI",
+        "Compression": "H.265+"
+      },
+      "images": [
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg",
+        "/images/nvr-recorder.jpg"
+      ],
+      "has360": false
+    }
+  ],
+  "power": [],
+  "cables": [],
+  "accessories": [],
+  "services": []
+}
