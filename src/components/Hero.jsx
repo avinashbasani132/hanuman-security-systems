@@ -87,11 +87,8 @@ const Hero = () => {
             </p>
 
             {/* CTA row */}
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
-              <a href="#contact" style={{
-                background: '#ff4a00',
-                color: '#fff',
-                padding: '0.95rem 2.25rem',
+            <div className="hero-cta-row" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
+              <a href="#contact" className="hero-btn-primary" style={{
                 borderRadius: '50px',
                 fontWeight: 700,
                 fontSize: '0.95rem',
@@ -105,7 +102,7 @@ const Hero = () => {
               >
                 📞 Get Free Site Survey
               </a>
-              <a href="#products" style={{
+              <a href="#products" className="hero-btn-secondary" style={{
                 background: '#fff',
                 color: '#0f172a',
                 padding: '0.95rem 2.25rem',
@@ -245,7 +242,16 @@ const Hero = () => {
         }
         @media (max-width: 768px) {
           .hero {
-            padding-top: 7rem !important;
+            padding-top: 8.5rem !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .hero-cta-row {
+            flex-direction: column;
+          }
+          .hero-btn-primary, .hero-btn-secondary {
+            width: 100%;
+            text-align: center;
           }
         }
       `}</style>
