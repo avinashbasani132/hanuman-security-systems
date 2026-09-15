@@ -84,16 +84,7 @@ const Solutions = () => {
         </div>
 
         {/* ── STATS ROW ── */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: '1px',
-          background: '#e5e7eb',
-          borderRadius: '16px',
-          overflow: 'hidden',
-          marginBottom: '3.5rem',
-          boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
-        }}>
+        <div className="stats-row">
           {[
             { num: '8+',    label: 'Industries Served' },
             { num: '500+',  label: 'Installations Done' },
@@ -235,6 +226,28 @@ const Solutions = () => {
         </div>
 
       </div>
+      <style>{`
+        .stats-row {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1px;
+          background: #e5e7eb;
+          border-radius: 16px;
+          overflow: hidden;
+          margin-bottom: 3.5rem;
+          box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        @media (max-width: 768px) {
+          .stats-row {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        @media (max-width: 480px) {
+          .stats-row {
+            grid-template-columns: 1fr;
+          }
+        }
+      `}</style>
     </section>
   );
 };

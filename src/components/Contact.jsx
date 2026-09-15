@@ -5,9 +5,9 @@ const Contact = () => {
     <section id="contact" className="section">
       <div className="container">
         <h2 className="section-title">Get a <span>Quick Quote</span></h2>
-        <div style={{ padding: '3rem', borderRadius: '20px', maxWidth: '800px', margin: '0 auto', background: '#fff', border: '1px solid #e5e7eb', boxShadow: '0 4px 20px rgba(0,0,0,0.07)' }}>
-          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-            <div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '1.5rem' }}>
+        <div className="contact-form-card">
+          <form className="contact-form" onSubmit={(e) => e.preventDefault()} style={{ width: '100%' }}>
+            <div className="contact-grid">
               <div className="form-group" style={{ marginBottom: 0 }}>
                 <input type="text" className="form-control" placeholder="Your Name" required />
               </div>
@@ -34,6 +34,22 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <style>{`
+        .contact-form-card {
+          padding: 3rem;
+          border-radius: 20px;
+          max-width: 800px;
+          margin: 0 auto;
+          background: #fff;
+          border: 1px solid #e5e7eb;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+        }
+        @media (max-width: 768px) {
+          .contact-form-card {
+            padding: 1.5rem;
+          }
+        }
+      `}</style>
     </section>
   );
 };

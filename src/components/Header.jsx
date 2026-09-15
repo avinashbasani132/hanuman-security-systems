@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useCart } from '../context/CartContext';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { toggleCart, cartCount } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,9 +29,29 @@ const Header = () => {
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
-        <a href="#contact" className="btn btn-primary" style={{ padding: '0.5rem 1.5rem' }}>
-          Get a Quote
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <button 
+            onClick={toggleCart}
+            style={{
+              background: 'none', border: 'none', cursor: 'pointer',
+              fontSize: '1.4rem', position: 'relative', display: 'flex', alignItems: 'center'
+            }}
+          >
+            🛒
+            {cartCount > 0 && (
+              <span style={{
+                position: 'absolute', top: '-8px', right: '-10px',
+                background: '#ef4444', color: '#fff', fontSize: '0.7rem',
+                fontWeight: 'bold', borderRadius: '50%', padding: '0.1rem 0.4rem'
+              }}>
+                {cartCount}
+              </span>
+            )}
+          </button>
+          <a href="#contact" className="btn btn-primary" style={{ padding: '0.5rem 1.5rem' }}>
+            Get a Quote
+          </a>
+        </div>
       </div>
     </header>
   );

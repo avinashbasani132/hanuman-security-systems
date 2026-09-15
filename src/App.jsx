@@ -1,4 +1,5 @@
 import React from 'react';
+import { CartProvider } from './context/CartContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -9,23 +10,27 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import Cart from './components/Cart';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        <Hero />
-        <Features />
-        <Products />
-        <Solutions />
-        <Testimonials />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </div>
+    <CartProvider>
+      <div className="app">
+        <Header />
+        <Cart />
+        <main>
+          <Hero />
+          <Features />
+          <Products />
+          <Solutions />
+          <Testimonials />
+          <FAQ />
+          <Contact />
+        </main>
+        <Footer />
+        <WhatsAppButton />
+      </div>
+    </CartProvider>
   );
 }
 

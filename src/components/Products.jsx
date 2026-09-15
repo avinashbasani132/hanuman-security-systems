@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { useCart } from '../context/CartContext';
 
 // ── TAB DEFINITIONS ─────────────────────────────────────────────────────────
 const TABS = [
@@ -67,6 +68,7 @@ const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [activeImgIdx,    setActiveImgIdx]    = useState(0);
   const [view360,         setView360]         = useState(false);
+  const { addToCart } = useCart();
 
   // All products across every category flattened
   const allProducts = useMemo(() => Object.values(ALL_PRODUCTS).flat(), []);
@@ -417,6 +419,19 @@ const Products = () => {
                       <strong style={{ color:'var(--text-primary)' }}>Best For: </strong>{selectedProduct.apps}
                     </p>
                   )}
+                  
+                  <button 
+                    onClick={() => { addToCart(selectedProduct); closeProduct(); }}
+                    style={{
+                      background: 'var(--accent-color)', color: '#fff',
+                      border: 'none', padding: '0.8rem 1.5rem', borderRadius: '8px',
+                      fontWeight: 'bold', cursor: 'pointer', fontSize: '0.95rem',
+                      width: '100%', marginTop: '1rem',
+                      boxShadow: '0 4px 14px rgba(255, 74, 0, 0.3)'
+                    }}
+                  >
+                    Add to Cart 🛒
+                  </button>
                 </div>
               </div>
 
