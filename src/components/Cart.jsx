@@ -1,54 +1,77 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
+import { supabase } from '../utils/supabase';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 
 const Cart = () => {
   const { cart, isCartOpen, toggleCart, removeFromCart, updateQuantity, clearCart } = useCart();
   const [customerName, setCustomerName] = useState('');
+  const [contactNo, setContactNo] = useState('');
+  const [address, setAddress] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
   if (!isCartOpen) return null;
 
-  const handleCheckout = () => {
+  const handleCheckout = async () => {
     if (cart.length === 0) return;
-
-    // NOTE: Generating a PDF AND redirecting to WhatsApp simultaneously gets blocked by mobile browsers.
-    // We will send the full order details purely via the WhatsApp text message instead.
-    /*
-    const doc = new jsPDF();
-    doc.setFontSize(20);
-    doc.text('Order Details - Hanuman Enterprises', 14, 22);
-    doc.setFontSize(12);
-    doc.text(`Customer Name: ${customerName || 'N/A'}`, 14, 32);
-    doc.text(`Date: ${new Date().toLocaleDateString()}`, 14, 40);
-
-    const tableColumn = ["Brand", "Model", "Type", "Qty"];
-    const tableRows = [];
-    cart.forEach(item => {
-      tableRows.push([item.brand, item.model, item.type || 'Product', item.quantity]);
-    });
-
-    doc.autoTable({
-      head: [tableColumn], body: tableRows, startY: 50, theme: 'grid', headStyles: { fillColor: [255, 74, 0] }
-    });
-    doc.save(`Order_${new Date().getTime()}.pdf`);
-    */
-
-    // 2. Open WhatsApp with pre-filled text
-    const phoneNumber = "919014612983"; // Target WhatsApp Number
+    if (!customerName || !contactNo || !address) {
+      setErrorMsg('Please fill in all details (Name, Contact No, Address).');
+      return;
+    }
     
-    let message = `Hello Hanuman Enterprises!\n\nI would like to place an order.\n\n`;
-    if (customerName) message += `Name: *${customerName}*\n`;
-    message += `\n*Order Summary:*\n`;
-    
-    cart.forEach(item => {
-      message += `- ${item.brand} ${item.model} (Qty: ${item.quantity})\n`;
-    });
+    setIsSubmitting(true);
+    setErrorMsg('');
 
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    
-    // Use location.href instead of window.open to avoid mobile popup blockers
-    window.location.href = whatsappUrl;
+    try {
+      // 1. Save to Supabase
+      const { error } = await supabase
+        .from('orders')
+        .insert([
+          { 
+            customer_name: customerName, 
+            contact_no: contactNo, 
+            address: address, 
+            items: cart 
+          }
+        ]);
+
+      if (error) {
+        console.error("Error saving order:", error);
+        // We can still proceed to WhatsApp even if DB fails, or we can halt.
+        // Let's proceed as a fallback.
+      }
+
+      // 2. Open WhatsApp with pre-filled text
+      const phoneNumber = "919014612983"; // Target WhatsApp Number
+      
+      let message = `*NEW ORDER* from Hanuman Enterprises Website\n\n`;
+      message += `*Customer Details:*\n`;
+      message += `Name: ${customerName}\n`;
+      message += `Contact No: ${contactNo}\n`;
+      message += `Address: ${address}\n`;
+      message += `\n*Order Summary:*\n`;
+      
+      cart.forEach(item => {
+        message += `- ${item.brand} ${item.model} (Qty: ${item.quantity})\n`;
+      });
+
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      
+      // Navigate to WhatsApp
+      window.location.href = whatsappUrl;
+
+      // Optional: Clear cart after successful checkout
+      // clearCart();
+      // toggleCart();
+
+    } catch (err) {
+      console.error("Checkout failed:", err);
+      setErrorMsg('An error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -84,15 +107,34 @@ const Cart = () => {
 
         {cart.length > 0 && (
           <div className="cart-footer">
+            {errorMsg && <p style={{ color: '#ef4444', fontSize: '0.85rem', marginBottom: '0.8rem', textAlign: 'center', fontWeight: 'bold' }}>{errorMsg}</p>}
             <input 
               type="text" 
-              placeholder="Your Name (Optional)" 
+              placeholder="Full Name *" 
               value={customerName}
               onChange={e => setCustomerName(e.target.value)}
               className="cart-input"
+              required
             />
-            <button onClick={handleCheckout} className="btn btn-primary checkout-btn">
-              Place Order via WhatsApp
+            <input 
+              type="tel" 
+              placeholder="Contact Number *" 
+              value={contactNo}
+              onChange={e => setContactNo(e.target.value)}
+              className="cart-input"
+              required
+            />
+            <textarea 
+              placeholder="Delivery Address *" 
+              value={address}
+              onChange={e => setAddress(e.target.value)}
+              className="cart-input"
+              rows={3}
+              style={{ resize: 'none' }}
+              required
+            />
+            <button onClick={handleCheckout} disabled={isSubmitting} className="btn btn-primary checkout-btn">
+              {isSubmitting ? 'Processing...' : 'Place Order via WhatsApp'}
             </button>
             <button onClick={clearCart} className="clear-cart-btn">Clear Cart</button>
           </div>
