@@ -12,41 +12,27 @@ const Cart = () => {
   const handleCheckout = () => {
     if (cart.length === 0) return;
 
-    // 1. Generate PDF
+    // NOTE: Generating a PDF AND redirecting to WhatsApp simultaneously gets blocked by mobile browsers.
+    // We will send the full order details purely via the WhatsApp text message instead.
+    /*
     const doc = new jsPDF();
-    
-    // Header
     doc.setFontSize(20);
     doc.text('Order Details - Hanuman Enterprises', 14, 22);
     doc.setFontSize(12);
     doc.text(`Customer Name: ${customerName || 'N/A'}`, 14, 32);
     doc.text(`Date: ${new Date().toLocaleDateString()}`, 14, 40);
 
-    // Table
     const tableColumn = ["Brand", "Model", "Type", "Qty"];
     const tableRows = [];
-
     cart.forEach(item => {
-      const rowData = [
-        item.brand,
-        item.model,
-        item.type || 'Product',
-        item.quantity
-      ];
-      tableRows.push(rowData);
+      tableRows.push([item.brand, item.model, item.type || 'Product', item.quantity]);
     });
 
     doc.autoTable({
-      head: [tableColumn],
-      body: tableRows,
-      startY: 50,
-      theme: 'grid',
-      headStyles: { fillColor: [255, 74, 0] }
+      head: [tableColumn], body: tableRows, startY: 50, theme: 'grid', headStyles: { fillColor: [255, 74, 0] }
     });
-
-    // Save PDF
-    const fileName = `Order_${new Date().getTime()}.pdf`;
-    doc.save(fileName);
+    doc.save(`Order_${new Date().getTime()}.pdf`);
+    */
 
     // 2. Open WhatsApp with pre-filled text
     const phoneNumber = "919014612983"; // Target WhatsApp Number
@@ -58,8 +44,6 @@ const Cart = () => {
     cart.forEach(item => {
       message += `- ${item.brand} ${item.model} (Qty: ${item.quantity})\n`;
     });
-    
-    message += `\n_I have also downloaded the PDF order summary on my device and can attach it here._`;
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
@@ -108,7 +92,7 @@ const Cart = () => {
               className="cart-input"
             />
             <button onClick={handleCheckout} className="btn btn-primary checkout-btn">
-              Download PDF & Place Order via WhatsApp
+              Place Order via WhatsApp
             </button>
             <button onClick={clearCart} className="clear-cart-btn">Clear Cart</button>
           </div>
@@ -172,6 +156,11 @@ const Cart = () => {
         .clear-cart-btn {
           width: 100%; background: none; border: none; color: #6b7280;
           cursor: pointer; font-size: 0.85rem; text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+          .cart-drawer {
+            max-width: 100%;
+          }
         }
       `}</style>
     </div>
