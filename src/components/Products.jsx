@@ -325,10 +325,10 @@ const Products = () => {
                         const cartItem = cart.find(c => c.model === item.model);
                         const qty = cartItem ? cartItem.quantity : 0;
                         return qty > 0 ? (
-                          <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#fff5f2', border: '1px solid var(--accent-color)', borderRadius: '8px', padding: '0.3rem 0.5rem' }}>
-                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty - 1); }} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', padding: '0 0.5rem' }}>-</button>
-                            <span style={{ fontWeight: 'bold', color: 'var(--accent-color)', fontSize: '0.9rem' }}>{qty} added</span>
-                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty + 1); }} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', padding: '0 0.5rem' }}>+</button>
+                          <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'var(--accent-color)', borderRadius: '8px', padding: '0.2rem' }}>
+                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty - 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', width: '30px', height: '30px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>-</button>
+                            <span style={{ fontWeight: 'bold', color: '#fff', fontSize: '0.95rem' }}>{qty}</span>
+                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty + 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', width: '30px', height: '30px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
                           </div>
                         ) : (
                           <button 
@@ -449,10 +449,10 @@ const Products = () => {
                     const cartItem = cart.find(c => c.model === selectedProduct.model);
                     const qty = cartItem ? cartItem.quantity : 0;
                     return qty > 0 ? (
-                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#fff5f2', border: '2px solid var(--accent-color)', borderRadius: '8px', padding: '0.6rem 1rem', marginTop: '1rem', width: '100%' }}>
-                        <button onClick={(e) => { e.stopPropagation(); updateQuantity(selectedProduct.model, qty - 1); }} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '1.5rem', fontWeight: 'bold', cursor: 'pointer', padding: '0 1rem' }}>-</button>
-                        <span style={{ fontWeight: 'bold', color: 'var(--accent-color)', fontSize: '1rem' }}>{qty} in cart</span>
-                        <button onClick={(e) => { e.stopPropagation(); updateQuantity(selectedProduct.model, qty + 1); }} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '1.5rem', fontWeight: 'bold', cursor: 'pointer', padding: '0 1rem' }}>+</button>
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'var(--accent-color)', borderRadius: '8px', padding: '0.3rem', marginTop: '1rem', width: '100%' }}>
+                        <button onClick={(e) => { e.stopPropagation(); updateQuantity(selectedProduct.model, qty - 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.5rem', fontWeight: 'bold', cursor: 'pointer', width: '40px', height: '40px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>-</button>
+                        <span style={{ fontWeight: 'bold', color: '#fff', fontSize: '1.1rem' }}>{qty} in cart</span>
+                        <button onClick={(e) => { e.stopPropagation(); updateQuantity(selectedProduct.model, qty + 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.5rem', fontWeight: 'bold', cursor: 'pointer', width: '40px', height: '40px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
                       </div>
                     ) : (
                       <button 
