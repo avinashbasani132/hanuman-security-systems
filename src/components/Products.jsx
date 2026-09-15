@@ -313,9 +313,22 @@ const Products = () => {
                         <span key={ti} style={{ fontSize:'0.66rem', padding:'0.15rem 0.42rem', borderRadius:'999px', background:'#f3f4f6', color:'#6b7280', border:'1px solid #e5e7eb' }}>{t}</span>
                       ))}
                     </div>
-                    <button className="btn btn-secondary" style={{ width:'100%', padding:'0.55rem', marginLeft:0, fontSize:'0.82rem', marginTop:'auto' }}>
-                      View Details →
-                    </button>
+                    <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                      <button 
+                        className="btn btn-secondary" 
+                        style={{ flex: 1, padding: '0.55rem', marginLeft: 0, fontSize: '0.82rem' }}
+                        onClick={(e) => { e.stopPropagation(); openProduct(item); }}
+                      >
+                        Details
+                      </button>
+                      <button 
+                        className="btn btn-primary" 
+                        style={{ flex: 1, padding: '0.55rem', fontSize: '0.82rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem' }}
+                        onClick={(e) => { e.stopPropagation(); addToCart(item); }}
+                      >
+                        Add 🛒
+                      </button>
+                    </div>
                   </div>
                 );
               })}
