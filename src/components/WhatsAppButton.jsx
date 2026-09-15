@@ -25,7 +25,7 @@ const WhatsAppButton = () => {
         justifyContent: 'center',
         fontSize: '32px',
         boxShadow: '0 4px 14px rgba(37, 211, 102, 0.4)',
-        zIndex: 9999,
+        zIndex: 999,
         transition: 'transform 0.3s ease, box-shadow 0.3s ease',
         textDecoration: 'none',
       }}

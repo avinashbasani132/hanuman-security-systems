@@ -63,8 +63,8 @@ const Cart = () => {
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
-    // Open WA in a new tab
-    window.open(whatsappUrl, '_blank');
+    // Use location.href instead of window.open to avoid mobile popup blockers
+    window.location.href = whatsappUrl;
   };
 
   return (
