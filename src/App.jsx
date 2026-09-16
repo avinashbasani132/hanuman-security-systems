@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { CartProvider } from './context/CartContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -12,10 +12,54 @@ import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import Cart from './components/Cart';
 import CustomerFormModal from './components/CustomerFormModal';
+import AdminPortal from './components/AdminPortal';
+import ProductPage from './components/ProductPage';
+import BrandPage from './components/BrandPage';
 import useScrollReveal from './hooks/useScrollReveal';
 
 function App() {
   useScrollReveal();
+  const [currentHash, setCurrentHash] = useState(window.location.hash);
+
+  useEffect(() => {
+    const handleHashChange = () => setCurrentHash(window.location.hash);
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  if (currentHash === '#admin') {
+    return <AdminPortal />;
+  }
+
+  if (currentHash.startsWith('#product/')) {
+    const model = decodeURIComponent(currentHash.replace('#product/', ''));
+    return (
+      <CartProvider>
+        <div className="app">
+          <Header />
+          <Cart />
+          <CustomerFormModal />
+          <ProductPage model={model} />
+          <Footer />
+        </div>
+      </CartProvider>
+    );
+  }
+
+  if (currentHash.startsWith('#brand/')) {
+    const brand = decodeURIComponent(currentHash.replace('#brand/', ''));
+    return (
+      <CartProvider>
+        <div className="app">
+          <Header />
+          <Cart />
+          <CustomerFormModal />
+          <BrandPage brand={brand} />
+          <Footer />
+        </div>
+      </CartProvider>
+    );
+  }
 
   return (
     <CartProvider>

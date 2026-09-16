@@ -88,11 +88,28 @@ const Hero = () => {
               fontSize: '1.05rem',
               color: '#64748b',
               lineHeight: 1.75,
-              marginBottom: '2.25rem',
+              marginBottom: '1.5rem',
               maxWidth: '480px',
             }}>
               From camera supply to full setup, remote viewing configuration and annual maintenance — Hanuman Enterprises handles everything for your home or business.
             </p>
+
+            {/* Extended Services Info */}
+            <div className="hero-services-list" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.8rem', marginBottom: '2.5rem', maxWidth: '500px' }}>
+              {[
+                'HD & 4K Camera Setup', 
+                'Remote Mobile Viewing', 
+                'Concealed Wiring Setup', 
+                '1-Year On-Site Service'
+              ].map((service, idx) => (
+                <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div style={{ width: '20px', height: '20px', borderRadius: '50%', background: 'rgba(255,74,0,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ff4a00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <span style={{ fontSize: '0.92rem', fontWeight: 600, color: '#334155' }}>{service}</span>
+                </div>
+              ))}
+            </div>
 
             {/* CTA row */}
             <div className="hero-cta-row" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
@@ -302,7 +319,12 @@ const Hero = () => {
             gap: 1rem !important;
           }
           .service-grid {
-            grid-template-columns: 1fr !important;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 0.5rem !important;
+          }
+          .service-grid > div {
+            padding: 0.75rem !important;
+            gap: 0.5rem !important;
           }
           .trust-bar {
             flex-direction: column !important;
@@ -312,6 +334,10 @@ const Hero = () => {
           .trust-bar > div:last-child {
             margin-left: 0 !important;
             text-align: left !important;
+          }
+          .hero-services-list {
+            grid-template-columns: 1fr !important;
+            gap: 0.6rem !important;
           }
         }
       `}</style>

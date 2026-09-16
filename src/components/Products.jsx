@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import { useCart } from '../context/CartContext';
 
 // ── BRANDS ──────────────────────────────────────────────────────────────────
@@ -19,19 +20,25 @@ const BRAND_META = {
 // ─── COMPONENT ───────────────────────────────────────────────────────────────
 const Products = () => {
   const [selectedBrand,   setSelectedBrand]   = useState(null);
-  const [selectedProduct, setSelectedProduct] = useState(null);
-  const [activeImgIdx,    setActiveImgIdx]    = useState(0);
-  const [view360,         setView360]         = useState(false);
-  const { cart, updateQuantity, openCustomerForm } = useCart();
+  const { cart, updateQuantity, openCustomerForm, searchQuery, setSearchQuery, allProducts } = useCart();
 
-  // All products across every category flattened
-  const allProducts = useMemo(() => Object.values(ALL_PRODUCTS).flat(), []);
 
-  // Products for selected brand
+
+  // Products for selected brand or search query
   const brandProducts = useMemo(() => {
+    if (searchQuery && searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      return allProducts.filter(p => 
+        (p.name && p.name.toLowerCase().includes(q)) ||
+        (p.model && p.model.toLowerCase().includes(q)) ||
+        (p.brand && p.brand.toLowerCase().includes(q)) ||
+        (p.desc && p.desc.toLowerCase().includes(q)) ||
+        (p.tags && Array.isArray(p.tags) ? p.tags.some(t => typeof t === 'string' && t.toLowerCase().includes(q)) : (typeof p.tags === 'string' && p.tags.toLowerCase().includes(q)))
+      );
+    }
     if (!selectedBrand) return [];
     return allProducts.filter(p => p.brand === selectedBrand);
-  }, [selectedBrand, allProducts]);
+  }, [selectedBrand, allProducts, searchQuery]);
 
   // Product count per brand (for showing on card)
   const brandCount = useMemo(() => {
@@ -70,7 +77,7 @@ const Products = () => {
         </p>
 
         {/* ── BRAND SELECTION VIEW ── */}
-        {!selectedBrand && (
+        {!selectedBrand && !searchQuery && (
           <>
             {/* brand grid */}
             <div style={{
@@ -86,7 +93,7 @@ const Products = () => {
                 return (
                   <button
                     key={brand}
-                    onClick={() => setSelectedBrand(brand)}
+                    onClick={() => window.location.hash = `#brand/${encodeURIComponent(brand)}`}
                     style={{
                       background: '#ffffff',
                       border: '1.5px solid #e5e7eb',
@@ -196,14 +203,13 @@ const Products = () => {
 
 
 
-        {/* ── BRAND PRODUCTS VIEW ── */}
-
-        {selectedBrand && (
+        {/* ── BRAND PRODUCTS / SEARCH RESULTS VIEW ── */}
+        {(selectedBrand || searchQuery) && (
           <>
             {/* back + header */}
             <div style={{ display:'flex', alignItems:'center', gap:'1rem', marginBottom:'2rem', flexWrap:'wrap' }}>
               <button
-                onClick={goBack}
+                onClick={() => { goBack(); if (setSearchQuery) setSearchQuery(''); }}
                 style={{
                   padding:'0.65rem 1.4rem', borderRadius:'999px',
                   border:'1.5px solid #e5e7eb',
@@ -215,16 +221,18 @@ const Products = () => {
                 onMouseEnter={e => { e.currentTarget.style.color=brandColors[selectedBrand]||'#ff4a00'; e.currentTarget.style.borderColor=brandColors[selectedBrand]||'#ff4a00'; }}
                 onMouseLeave={e => { e.currentTarget.style.color='var(--text-secondary)'; e.currentTarget.style.borderColor='#e5e7eb'; }}
               >
-                ← All Brands
+                ← {searchQuery ? 'Clear Search' : 'All Brands'}
               </button>
               <div style={{ display:'flex', alignItems:'center', gap:'0.6rem' }}>
-                <span style={{
-                  width:'10px', height:'10px', borderRadius:'50%',
-                  background: brandColors[selectedBrand] || '#ff4a00',
-                  display:'inline-block',
-                }} />
+                {!searchQuery && (
+                  <span style={{
+                    width:'10px', height:'10px', borderRadius:'50%',
+                    background: brandColors[selectedBrand] || '#ff4a00',
+                    display:'inline-block',
+                  }} />
+                )}
                 <h3 style={{ color:'var(--text-primary)', fontSize:'1.2rem', fontWeight:800, margin:0 }}>
-                  {selectedBrand}
+                  {searchQuery ? `Search Results for "${searchQuery}"` : selectedBrand}
                   <span style={{ color:'var(--text-secondary)', fontWeight:400, fontSize:'0.9rem', marginLeft:'0.5rem' }}>
                     — {brandProducts.length} products
                   </span>
@@ -237,11 +245,9 @@ const Products = () => {
               {brandProducts.map((item, idx) => {
                 const col = brandColors[item.brand] || '#6366f1';
                 return (
-                  <div key={idx} className="card"
-                    style={{ background:'#fff', cursor:'pointer', display:'flex', flexDirection:'column', padding:'1.25rem' }}
-                    onClick={() => openProduct(item)}>
+                  <div key={idx} className="card product-card-responsive" onClick={() => window.location.hash = `#product/${encodeURIComponent(item.model)}`}>
                     {/* image */}
-                    <div style={{ height:'155px', background:'#f8f9fc', borderRadius:'10px', overflow:'hidden', marginBottom:'0.9rem', border:'1px solid #f0f0f0', display:'flex', alignItems:'center', justifyContent:'center', position:'relative' }}>
+                    <div className="product-image-container" style={{ background:'#f8f9fc', borderRadius:'10px', overflow:'hidden', border:'1px solid #f0f0f0', display:'flex', alignItems:'center', justifyContent:'center', position:'relative', flexShrink: 0 }}>
                       <img src={item.images[0]} alt={item.name}
                         style={{ width:'100%', height:'100%', objectFit:'contain', padding:'10px', position:'absolute', zIndex:2 }}
                         onError={e => { 
@@ -254,46 +260,50 @@ const Products = () => {
                           e.target.parentNode.appendChild(span);
                         }} />
                     </div>
-                    {/* brand badge */}
-                    <span style={{ fontSize:'0.68rem', fontWeight:700, letterSpacing:'0.06em', padding:'0.18rem 0.55rem', borderRadius:'999px', background:`${col}15`, color:col, alignSelf:'flex-start', marginBottom:'0.5rem', border:`1px solid ${col}40` }}>
-                      {item.brand}
-                    </span>
-                    <h3 style={{ fontSize:'0.93rem', fontWeight:700, color:'var(--text-primary)', marginBottom:'0.2rem', lineHeight:1.35 }}>{item.name}</h3>
-                    <p style={{ fontSize:'0.76rem', color:col, fontWeight:600, marginBottom:'0.45rem' }}>{item.model}</p>
-                    <p style={{ fontSize:'0.82rem', color:'var(--text-secondary)', flex:1, lineHeight:1.55 }}>{item.desc}</p>
-                    {/* feature pills – first 3 */}
-                    <div style={{ display:'flex', flexWrap:'wrap', gap:'0.25rem', margin:'0.6rem 0' }}>
-                      {item.tags.slice(0,3).map((t,ti) => (
-                        <span key={ti} style={{ fontSize:'0.66rem', padding:'0.15rem 0.42rem', borderRadius:'999px', background:'#f3f4f6', color:'#6b7280', border:'1px solid #e5e7eb' }}>{t}</span>
-                      ))}
-                    </div>
-                    <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
-                      <button 
-                        className="btn btn-secondary" 
-                        style={{ flex: 1, padding: '0.55rem', marginLeft: 0, fontSize: '0.82rem' }}
-                        onClick={(e) => { e.stopPropagation(); openProduct(item); }}
-                      >
-                        Details
-                      </button>
-                      {(() => {
-                        const cartItem = cart.find(c => c.model === item.model);
-                        const qty = cartItem ? cartItem.quantity : 0;
-                        return qty > 0 ? (
-                          <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'var(--accent-color)', borderRadius: '8px', padding: '0.2rem' }}>
-                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty - 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', width: '30px', height: '30px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>-</button>
-                            <span style={{ fontWeight: 'bold', color: '#fff', fontSize: '0.95rem' }}>{qty}</span>
-                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty + 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', width: '30px', height: '30px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
-                          </div>
-                        ) : (
-                          <button 
-                            className="btn btn-primary" 
-                            style={{ flex: 1, padding: '0.55rem', fontSize: '0.82rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem' }}
-                            onClick={(e) => { e.stopPropagation(); openCustomerForm(item); }}
-                          >
-                            Add 🛒
-                          </button>
-                        );
-                      })()}
+                    
+                    {/* info */}
+                    <div className="product-info-container" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+                      {/* brand badge */}
+                      <span style={{ fontSize:'0.68rem', fontWeight:700, letterSpacing:'0.06em', padding:'0.18rem 0.55rem', borderRadius:'999px', background:`${col}15`, color:col, alignSelf:'flex-start', marginBottom:'0.5rem', border:`1px solid ${col}40` }}>
+                        {item.brand}
+                      </span>
+                      <h3 className="product-card-title" style={{ fontSize:'0.93rem', fontWeight:700, color:'var(--text-primary)', marginBottom:'0.2rem', lineHeight:1.35 }}>{item.name}</h3>
+                      <p style={{ fontSize:'0.76rem', color:col, fontWeight:600, marginBottom:'0.45rem' }}>{item.model}</p>
+                      <p className="product-card-desc" style={{ fontSize:'0.82rem', color:'var(--text-secondary)', flex:1, lineHeight:1.55 }}>{item.desc}</p>
+                      {/* feature pills – first 3 */}
+                      <div className="product-card-tags" style={{ display:'flex', flexWrap:'wrap', gap:'0.25rem', margin:'0.6rem 0' }}>
+                        {(Array.isArray(item.tags) ? item.tags : (item.tags ? [item.tags] : [])).slice(0,3).map((t,ti) => (
+                          <span key={ti} style={{ fontSize:'0.66rem', padding:'0.15rem 0.42rem', borderRadius:'999px', background:'#f3f4f6', color:'#6b7280', border:'1px solid #e5e7eb' }}>{t}</span>
+                        ))}
+                      </div>
+
+                      <div style={{ display: 'flex', alignItems: 'center', marginTop: 'auto', marginBottom: '0.85rem' }}>
+                        <span style={{ fontSize: '1.15rem', fontWeight: 800, color: '#111827' }}>
+                          {item.price ? `₹${item.price.toLocaleString('en-IN')}` : 'Price on Request'}
+                        </span>
+                      </div>
+
+                      <div style={{ display: 'flex', gap: '0.5rem' }}>
+                        {(() => {
+                          const cartItem = cart.find(c => c.model === item.model);
+                          const qty = cartItem ? cartItem.quantity : 0;
+                          return qty > 0 ? (
+                            <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'var(--accent-color)', borderRadius: '8px', padding: '0.2rem' }}>
+                              <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty - 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', width: '30px', height: '30px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>-</button>
+                              <span style={{ fontWeight: 'bold', color: '#fff', fontSize: '0.95rem' }}>{qty}</span>
+                              <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty + 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', width: '30px', height: '30px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
+                            </div>
+                          ) : (
+                            <button 
+                              className="btn btn-primary" 
+                              style={{ flex: 1, padding: '0.55rem', fontSize: '0.82rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem' }}
+                              onClick={(e) => { e.stopPropagation(); openCustomerForm(item); }}
+                            >
+                              Add 🛒
+                            </button>
+                          );
+                        })()}
+                      </div>
                     </div>
                   </div>
                 );
@@ -302,148 +312,6 @@ const Products = () => {
           </>
         )}
       </div>
-
-      {/* ── DETAIL MODAL ── */}
-      {selectedProduct && (
-        <div className="modal-overlay" onClick={closeProduct}>
-          <div className="modal-content animate-fade-in" onClick={e => e.stopPropagation()}>
-            <div className="modal-header">
-              <h2 style={{ fontSize:'1.2rem', margin:0, color:'var(--text-primary)' }}>{selectedProduct.name}</h2>
-              <button onClick={closeProduct} className="modal-close">&times;</button>
-            </div>
-            <div className="modal-body">
-              {/* hero */}
-              <div style={{ display:'flex', gap:'1.5rem', flexWrap:'wrap', marginBottom:'1.75rem', alignItems:'flex-start' }}>
-                <div style={{ flex:'0 0 300px', display:'flex', flexDirection:'column', gap:'1rem' }}>
-                  
-                  {/* Main Image or 360 Viewer */}
-                  <div style={{ height:'300px', background:'#f8f9fc', borderRadius:'14px', overflow:'hidden', display:'flex', alignItems:'center', justifyContent:'center', border:'1px solid #e5e7eb', position:'relative' }}>
-                    {view360 ? (
-                      <div style={{ textAlign: 'center', padding: '2rem' }}>
-                        <span style={{ fontSize: '3rem' }}>🔄</span>
-                        <h4 style={{ margin: '1rem 0 0.5rem', color: '#111827' }}>Interactive 360° View</h4>
-                        <p style={{ color: '#6b7280', fontSize: '0.85rem', margin: 0 }}>Drag to rotate the product.<br/>(Placeholder for 360 assets)</p>
-                      </div>
-                    ) : (
-                      <img src={selectedProduct.images ? selectedProduct.images[activeImgIdx] : ''} alt={selectedProduct.name}
-                        style={{ width:'100%', height:'100%', objectFit:'contain', padding:'12px', position:'absolute', zIndex:2 }}
-                        onError={e => { 
-                          e.target.style.display='none'; 
-                          if (e.target.parentNode.querySelector('.fallback-text')) return;
-                          const span = document.createElement('span');
-                          span.className = 'fallback-text';
-                          span.style.cssText = 'color:#9ca3af; font-size:1.8rem; font-weight:800; font-family:Outfit,sans-serif; z-index:1; text-align:center; padding:10px;';
-                          span.innerText = selectedProduct.brand + ' ' + (activeImgIdx > 0 ? `(Angle ${activeImgIdx+1})` : '');
-                          e.target.parentNode.appendChild(span);
-                        }} />
-                    )}
-                  </div>
-                  
-                  {/* Thumbnails */}
-                  {selectedProduct.images && selectedProduct.images.length > 1 && (
-                    <div style={{ display:'flex', gap:'0.5rem', overflowX:'auto', paddingBottom:'0.5rem' }}>
-                      {selectedProduct.images.map((imgUrl, idx) => (
-                        <div key={idx} 
-                          onClick={() => { setActiveImgIdx(idx); setView360(false); }}
-                          style={{
-                            width: '60px', height: '60px', flexShrink: 0,
-                            borderRadius: '8px', background: '#fff', border: activeImgIdx === idx && !view360 ? '2px solid var(--accent-color)' : '1px solid #e5e7eb',
-                            cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden'
-                          }}>
-                           <img src={imgUrl} style={{ width:'100%', height:'100%', objectFit:'contain', padding:'4px' }} onError={e => e.target.style.display='none'} />
-                        </div>
-                      ))}
-                    </div>
-                  )}
-
-                  {/* 360 Button */}
-                  {selectedProduct.has360 && (
-                    <button 
-                      onClick={() => setView360(true)}
-                      style={{
-                        padding: '0.75rem', background: view360 ? '#111827' : '#f3f4f6', 
-                        color: view360 ? '#fff' : '#111827', border: 'none', borderRadius: '8px', 
-                        fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem'
-                      }}>
-                      🔄 View in 360°
-                    </button>
-                  )}
-                </div>
-
-                <div style={{ flex:1, minWidth:'250px' }}>
-                  {/* brand & type badges */}
-                  <div style={{ display:'flex', gap:'0.4rem', flexWrap:'wrap', marginBottom:'0.75rem' }}>
-                    {[selectedProduct.brand, selectedProduct.type].map((lbl,li) => {
-                      const bc = brandColors[selectedProduct.brand] || '#ff4a00';
-                      return (
-                        <span key={li} style={{ fontSize:'0.72rem', fontWeight:700, padding:'0.2rem 0.65rem', borderRadius:'999px',
-                          background: li===0 ? `${bc}15` : '#f3f4f6',
-                          color: li===0 ? bc : '#6b7280',
-                          border: li===0 ? `1px solid ${bc}40` : '1px solid #e5e7eb'
-                        }}>{lbl}</span>
-                      );
-                    })}
-                  </div>
-                  <p style={{ color: brandColors[selectedProduct.brand]||'#ff4a00', fontWeight:700, marginBottom:'0.5rem', fontSize:'0.9rem' }}>Model: {selectedProduct.model}</p>
-                  <p style={{ color:'var(--text-secondary)', lineHeight:1.65, marginBottom:'0.9rem', fontSize:'0.9rem' }}>{selectedProduct.desc}</p>
-                  {/* all tags */}
-                  <div style={{ display:'flex', flexWrap:'wrap', gap:'0.3rem', marginBottom:'1rem' }}>
-                    {selectedProduct.tags.map((t,ti) => (
-                      <span key={ti} style={{ fontSize:'0.72rem', padding:'0.22rem 0.6rem', borderRadius:'999px', background:'#fff5f2', color:'var(--accent-color)', fontWeight:600, border:'1px solid rgba(255,74,0,0.18)' }}>{t}</span>
-                    ))}
-                  </div>
-                  {selectedProduct.apps && (
-                    <p style={{ fontSize:'0.85rem', color:'var(--text-secondary)', marginBottom:'1rem' }}>
-                      <strong style={{ color:'var(--text-primary)' }}>Best For: </strong>{selectedProduct.apps}
-                    </p>
-                  )}
-                  
-                  {(() => {
-                    const cartItem = cart.find(c => c.model === selectedProduct.model);
-                    const qty = cartItem ? cartItem.quantity : 0;
-                    return qty > 0 ? (
-                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'var(--accent-color)', borderRadius: '8px', padding: '0.3rem', marginTop: '1rem', width: '100%' }}>
-                        <button onClick={(e) => { e.stopPropagation(); updateQuantity(selectedProduct.model, qty - 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.5rem', fontWeight: 'bold', cursor: 'pointer', width: '40px', height: '40px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>-</button>
-                        <span style={{ fontWeight: 'bold', color: '#fff', fontSize: '1.1rem' }}>{qty} in cart</span>
-                        <button onClick={(e) => { e.stopPropagation(); updateQuantity(selectedProduct.model, qty + 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.5rem', fontWeight: 'bold', cursor: 'pointer', width: '40px', height: '40px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
-                      </div>
-                    ) : (
-                      <button 
-                        onClick={() => { openCustomerForm(selectedProduct); }}
-                        style={{
-                          background: 'var(--accent-color)', color: '#fff',
-                          border: 'none', padding: '0.8rem 1.5rem', borderRadius: '8px',
-                          fontWeight: 'bold', cursor: 'pointer', fontSize: '0.95rem',
-                          width: '100%', marginTop: '1rem',
-                          boxShadow: '0 4px 14px rgba(255, 74, 0, 0.3)'
-                        }}
-                      >
-                        Add to Cart 🛒
-                      </button>
-                    );
-                  })()}
-                </div>
-              </div>
-
-              {/* specs table */}
-              {selectedProduct.specs && (
-                <div style={{ borderTop:'1px solid #f0f0f0', paddingTop:'1.4rem' }}>
-                  <h4 style={{ color:'var(--text-primary)', marginBottom:'1rem', fontSize:'1rem', fontWeight:700 }}>Technical Specifications</h4>
-                  <ul style={{ listStyle:'none', padding:0, margin:0, display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(220px, 1fr))', gap:'0.5rem' }}>
-                    {Object.entries(selectedProduct.specs).map(([k,v]) => (
-                      <li key={k} style={{ background:'#f8f9fc', border:'1px solid #e5e7eb', borderRadius:'10px', padding:'0.65rem 0.9rem' }}>
-                        <div style={{ fontSize:'0.67rem', color:'#9ca3af', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.18rem' }}>{k}</div>
-                        <div style={{ fontSize:'0.86rem', color:'var(--text-primary)', lineHeight:1.4, fontWeight:500 }}>{v}</div>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

@@ -6,6 +6,7 @@ const Cart = () => {
   const { cart, isCartOpen, toggleCart, removeFromCart, updateQuantity, clearCart, customerDetails, setShowCustomerForm } = useCart();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  const [orderSuccess, setOrderSuccess] = useState(false);
 
   if (!isCartOpen) return null;
 
@@ -36,9 +37,18 @@ const Cart = () => {
         ]);
 
       if (error) {
-        console.error("Error saving order:", error);
-        // We can still proceed to WhatsApp even if DB fails, or we can halt.
-        // Let's proceed as a fallback.
+        console.error("Error saving order to DB, saving locally instead:", error);
+        // Fallback to local storage if DB is not set up / blocked
+        const localOrders = JSON.parse(localStorage.getItem('cctv_local_orders') || '[]');
+        localOrders.push({
+          id: Date.now(),
+          created_at: new Date().toISOString(),
+          customer_name: customerDetails.name,
+          contact_no: customerDetails.phone,
+          address: `${customerDetails.address}, ${customerDetails.city} - ${customerDetails.pincode}`,
+          items: cart
+        });
+        localStorage.setItem('cctv_local_orders', JSON.stringify(localOrders));
       }
 
       // 2. Open WhatsApp with pre-filled text
@@ -53,18 +63,20 @@ const Cart = () => {
       if (customerDetails.landmark) message += `Landmark: ${customerDetails.landmark}\n`;
       message += `\n*Order Summary:*\n`;
       
+      let cartTotal = 0;
       cart.forEach(item => {
-        message += `- ${item.brand} ${item.model} (Qty: ${item.quantity})\n`;
+        const itemTotal = (item.price || 0) * item.quantity;
+        cartTotal += itemTotal;
+        message += `- ${item.brand} ${item.model} (Qty: ${item.quantity}) - ₹${itemTotal.toLocaleString('en-IN')}\n`;
       });
+      message += `\n*Total Estimated Amount: ₹${cartTotal.toLocaleString('en-IN')}*\n`;
 
       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-      
-      // Navigate to WhatsApp
-      window.location.href = whatsappUrl;
+      window.open(whatsappUrl, '_blank');
 
-      // Optional: Clear cart after successful checkout
-      // clearCart();
-      // toggleCart();
+      // Order saved successfully
+      setOrderSuccess(true);
+      clearCart();
 
     } catch (err) {
       console.error("Checkout failed:", err);
@@ -82,48 +94,74 @@ const Cart = () => {
           <button onClick={toggleCart} className="cart-close">&times;</button>
         </div>
 
-        <div className="cart-items">
-          {cart.length === 0 ? (
-            <p className="empty-cart">Your cart is empty.</p>
-          ) : (
-            cart.map(item => (
-              <div key={item.model} className="cart-item">
-                <div className="cart-item-info">
-                  <h4>{item.name}</h4>
-                  <p>{item.brand} - {item.model}</p>
-                </div>
-                <div className="cart-item-actions">
-                  <div className="qty-controls">
-                    <button onClick={() => updateQuantity(item.model, item.quantity - 1)}>-</button>
-                    <span>{item.quantity}</span>
-                    <button onClick={() => updateQuantity(item.model, item.quantity + 1)}>+</button>
+        {orderSuccess ? (
+          <div style={{ padding: '2rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎉</div>
+            <h3 style={{ margin: '0 0 1rem 0', color: '#111827' }}>Order Placed Successfully!</h3>
+            <p style={{ color: '#6b7280', fontSize: '0.95rem', lineHeight: '1.5', marginBottom: '2rem' }}>
+              Thank you for your request. We have received your order and will contact you shortly.
+            </p>
+            <button onClick={() => { toggleCart(); setOrderSuccess(false); }} className="btn btn-primary" style={{ width: '100%' }}>
+              Close
+            </button>
+          </div>
+        ) : (
+          <>
+            <div className="cart-items">
+              {cart.length === 0 ? (
+                <p className="empty-cart">Your cart is empty.</p>
+              ) : (
+                cart.map(item => (
+                  <div key={item.model} className="cart-item">
+                    <div className="cart-item-info">
+                      <h4>{item.name}</h4>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <p>{item.brand} - {item.model}</p>
+                        <span style={{ fontSize: '0.9rem', fontWeight: 700, color: '#111827' }}>
+                          {item.price ? `₹${item.price.toLocaleString('en-IN')}` : 'N/A'}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="cart-item-actions">
+                      <div className="qty-controls">
+                        <button onClick={() => updateQuantity(item.model, item.quantity - 1)}>-</button>
+                        <span>{item.quantity}</span>
+                        <button onClick={() => updateQuantity(item.model, item.quantity + 1)}>+</button>
+                      </div>
+                      <button onClick={() => removeFromCart(item.model)} className="remove-btn">🗑️</button>
+                    </div>
                   </div>
-                  <button onClick={() => removeFromCart(item.model)} className="remove-btn">🗑️</button>
-                </div>
-              </div>
-            ))
-          )}
-        </div>
-
-        {cart.length > 0 && (
-          <div className="cart-footer">
-            {errorMsg && <p style={{ color: '#ef4444', fontSize: '0.85rem', marginBottom: '0.8rem', textAlign: 'center', fontWeight: 'bold' }}>{errorMsg}</p>}
-            
-            {/* Display Saved Customer Details */}
-            <div className="saved-details">
-              <div className="saved-details-header">
-                <h4>Billing Details</h4>
-                <button className="edit-details-btn" onClick={() => setShowCustomerForm(true)}>Edit Details</button>
-              </div>
-              <p><strong>{customerDetails.name}</strong> ({customerDetails.phone})</p>
-              <p>{customerDetails.address}, {customerDetails.city} - {customerDetails.pincode}</p>
+                ))
+              )}
             </div>
 
-            <button onClick={handleCheckout} disabled={isSubmitting} className="btn btn-primary checkout-btn">
-              {isSubmitting ? 'Processing...' : 'Place Order via WhatsApp'}
-            </button>
-            <button onClick={clearCart} className="clear-cart-btn">Clear Cart</button>
-          </div>
+            {cart.length > 0 && (
+              <div className="cart-footer">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', paddingBottom: '1.25rem', borderBottom: '1px solid #e5e7eb' }}>
+                  <h3 style={{ margin: 0, fontSize: '1.1rem', color: '#374151' }}>Total:</h3>
+                  <h3 style={{ margin: 0, fontSize: '1.4rem', color: '#111827', fontWeight: 900 }}>
+                    ₹{cart.reduce((sum, item) => sum + ((item.price || 0) * item.quantity), 0).toLocaleString('en-IN')}
+                  </h3>
+                </div>
+                {errorMsg && <p style={{ color: '#ef4444', fontSize: '0.85rem', marginBottom: '0.8rem', textAlign: 'center', fontWeight: 'bold' }}>{errorMsg}</p>}
+                
+                {/* Display Saved Customer Details */}
+                <div className="saved-details">
+                  <div className="saved-details-header">
+                    <h4>Billing Details</h4>
+                    <button className="edit-details-btn" onClick={() => setShowCustomerForm(true)}>Edit Details</button>
+                  </div>
+                  <p><strong>{customerDetails.name}</strong> ({customerDetails.phone})</p>
+                  <p>{customerDetails.address}, {customerDetails.city} - {customerDetails.pincode}</p>
+                </div>
+
+                <button onClick={handleCheckout} disabled={isSubmitting} className="btn btn-primary checkout-btn">
+                  {isSubmitting ? 'Processing...' : 'Place Order'}
+                </button>
+                <button onClick={clearCart} className="clear-cart-btn">Clear Cart</button>
+              </div>
+            )}
+          </>
         )}
       </div>
 

@@ -28,7 +28,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3490
     },
     {
       "brand": "CP PLUS",
@@ -60,7 +61,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 16490
     },
     {
       "brand": "CP PLUS",
@@ -90,7 +92,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7490
     },
     {
       "brand": "CP PLUS",
@@ -124,7 +127,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 14490
     },
     {
       "brand": "CP PLUS",
@@ -154,7 +158,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3490
     },
     {
       "brand": "CP PLUS",
@@ -184,7 +189,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 5490
     },
     {
       "brand": "CP PLUS",
@@ -214,7 +220,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 6490
     },
     {
       "brand": "CP PLUS",
@@ -246,7 +253,8 @@
         "/images/cp-unp-d2521l10-daq.jpg",
         "/images/cp-unp-d2521l10-daq.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 14490
     },
     {
       "brand": "CP PLUS",
@@ -276,7 +284,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "CP PLUS",
@@ -310,7 +319,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 16490
     },
     {
       "brand": "CP PLUS",
@@ -340,7 +350,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 6490
     },
     {
       "brand": "CP PLUS",
@@ -370,7 +381,8 @@
         "/images/cp-usc-da24l2.jpg",
         "/images/cp-usc-da24l2.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 2490
     },
     {
       "brand": "CP PLUS",
@@ -400,7 +412,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3490
     },
     {
       "brand": "CP PLUS",
@@ -432,7 +445,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 16490
     },
     {
       "brand": "CP PLUS",
@@ -462,7 +476,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7490
     },
     {
       "brand": "CP PLUS",
@@ -496,7 +511,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 14490
     },
     {
       "brand": "CP PLUS",
@@ -526,7 +542,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3490
     },
     {
       "brand": "CP PLUS",
@@ -556,7 +573,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 5490
     },
     {
       "brand": "CP PLUS",
@@ -586,7 +604,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 6490
     },
     {
       "brand": "CP PLUS",
@@ -618,7 +637,8 @@
         "/images/cp-unp-d2521l10-daq.jpg",
         "/images/cp-unp-d2521l10-daq.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 14490
     },
     {
       "brand": "Hikvision",
@@ -648,7 +668,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4190
     },
     {
       "brand": "Hikvision",
@@ -680,7 +701,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19790
     },
     {
       "brand": "Hikvision",
@@ -710,7 +732,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 8990
     },
     {
       "brand": "Hikvision",
@@ -744,7 +767,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 17390
     },
     {
       "brand": "Hikvision",
@@ -774,7 +798,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4190
     },
     {
       "brand": "Hikvision",
@@ -804,7 +829,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 6590
     },
     {
       "brand": "Hikvision",
@@ -834,7 +860,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7790
     },
     {
       "brand": "Hikvision",
@@ -866,7 +893,8 @@
         "/images/cp-unp-d2521l10-daq.jpg",
         "/images/cp-unp-d2521l10-daq.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 17390
     },
     {
       "brand": "Hikvision",
@@ -896,7 +924,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 5390
     },
     {
       "brand": "Hikvision",
@@ -930,7 +959,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19790
     },
     {
       "brand": "Hikvision",
@@ -960,7 +990,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7790
     },
     {
       "brand": "Hikvision",
@@ -990,7 +1021,8 @@
         "/images/cp-usc-da24l2.jpg",
         "/images/cp-usc-da24l2.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 2990
     },
     {
       "brand": "Hikvision",
@@ -1020,7 +1052,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4190
     },
     {
       "brand": "Hikvision",
@@ -1052,7 +1085,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19790
     },
     {
       "brand": "Hikvision",
@@ -1082,7 +1116,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 8990
     },
     {
       "brand": "Hikvision",
@@ -1116,7 +1151,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 17390
     },
     {
       "brand": "Hikvision",
@@ -1146,7 +1182,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4190
     },
     {
       "brand": "Hikvision",
@@ -1176,7 +1213,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 6590
     },
     {
       "brand": "Hikvision",
@@ -1206,7 +1244,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7790
     },
     {
       "brand": "Hikvision",
@@ -1238,7 +1277,8 @@
         "/images/cp-unp-d2521l10-daq.jpg",
         "/images/cp-unp-d2521l10-daq.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 17390
     },
     {
       "brand": "Dahua",
@@ -1268,7 +1308,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3990
     },
     {
       "brand": "Dahua",
@@ -1300,7 +1341,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 18990
     },
     {
       "brand": "Dahua",
@@ -1330,7 +1372,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 8640
     },
     {
       "brand": "Dahua",
@@ -1364,7 +1407,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 16690
     },
     {
       "brand": "Dahua",
@@ -1394,7 +1438,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3990
     },
     {
       "brand": "Dahua",
@@ -1424,7 +1469,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 6290
     },
     {
       "brand": "Dahua",
@@ -1454,7 +1500,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7440
     },
     {
       "brand": "Dahua",
@@ -1486,7 +1533,8 @@
         "/images/cp-unp-d2521l10-daq.jpg",
         "/images/cp-unp-d2521l10-daq.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 16690
     },
     {
       "brand": "Dahua",
@@ -1516,7 +1564,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 5190
     },
     {
       "brand": "Dahua",
@@ -1550,7 +1599,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 18990
     },
     {
       "brand": "Dahua",
@@ -1580,7 +1630,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7440
     },
     {
       "brand": "Dahua",
@@ -1610,7 +1661,8 @@
         "/images/cp-usc-da24l2.jpg",
         "/images/cp-usc-da24l2.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 2890
     },
     {
       "brand": "Dahua",
@@ -1640,7 +1692,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3990
     },
     {
       "brand": "Dahua",
@@ -1672,7 +1725,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 18990
     },
     {
       "brand": "Dahua",
@@ -1702,7 +1756,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 8640
     },
     {
       "brand": "Dahua",
@@ -1736,7 +1791,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 16690
     },
     {
       "brand": "Dahua",
@@ -1766,7 +1822,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3990
     },
     {
       "brand": "Dahua",
@@ -1796,7 +1853,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 6290
     },
     {
       "brand": "Dahua",
@@ -1826,7 +1884,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7440
     },
     {
       "brand": "Dahua",
@@ -1858,7 +1917,8 @@
         "/images/cp-unp-d2521l10-daq.jpg",
         "/images/cp-unp-d2521l10-daq.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 16690
     },
     {
       "brand": "EZVIZ",
@@ -1888,7 +1948,8 @@
         "/images/ezviz-c3w-pro.jpg",
         "/images/ezviz-c3w-pro.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4540
     },
     {
       "brand": "EZVIZ",
@@ -1920,7 +1981,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 21440
     },
     {
       "brand": "EZVIZ",
@@ -1950,7 +2012,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 9740
     },
     {
       "brand": "EZVIZ",
@@ -1984,7 +2047,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 18840
     },
     {
       "brand": "EZVIZ",
@@ -2014,7 +2078,8 @@
         "/images/ezviz-c3w-pro.jpg",
         "/images/ezviz-c3w-pro.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4540
     },
     {
       "brand": "EZVIZ",
@@ -2044,7 +2109,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7140
     },
     {
       "brand": "EZVIZ",
@@ -2074,7 +2140,8 @@
         "/images/ezviz-c3w-pro.jpg",
         "/images/ezviz-c3w-pro.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 8440
     },
     {
       "brand": "EZVIZ",
@@ -2106,7 +2173,8 @@
         "/images/ezviz-c8c.jpg",
         "/images/ezviz-c8c.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 18840
     },
     {
       "brand": "EZVIZ",
@@ -2136,7 +2204,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 5840
     },
     {
       "brand": "EZVIZ",
@@ -2170,7 +2239,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 21440
     },
     {
       "brand": "EZVIZ",
@@ -2200,7 +2270,8 @@
         "/images/ezviz-c3w-pro.jpg",
         "/images/ezviz-c3w-pro.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 8440
     },
     {
       "brand": "EZVIZ",
@@ -2230,7 +2301,8 @@
         "/images/ezviz-c3w-pro.jpg",
         "/images/ezviz-c3w-pro.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3240
     },
     {
       "brand": "EZVIZ",
@@ -2260,7 +2332,8 @@
         "/images/ezviz-c3w-pro.jpg",
         "/images/ezviz-c3w-pro.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4540
     },
     {
       "brand": "EZVIZ",
@@ -2292,7 +2365,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 21440
     },
     {
       "brand": "EZVIZ",
@@ -2322,7 +2396,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 9740
     },
     {
       "brand": "EZVIZ",
@@ -2356,7 +2431,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 18840
     },
     {
       "brand": "EZVIZ",
@@ -2386,7 +2462,8 @@
         "/images/ezviz-c3w-pro.jpg",
         "/images/ezviz-c3w-pro.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4540
     },
     {
       "brand": "EZVIZ",
@@ -2416,7 +2493,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7140
     },
     {
       "brand": "EZVIZ",
@@ -2446,7 +2524,8 @@
         "/images/ezviz-c3w-pro.jpg",
         "/images/ezviz-c3w-pro.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 8440
     },
     {
       "brand": "EZVIZ",
@@ -2478,7 +2557,8 @@
         "/images/ezviz-c8c.jpg",
         "/images/ezviz-c8c.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 18840
     },
     {
       "brand": "TP-Link",
@@ -2508,7 +2588,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3140
     },
     {
       "brand": "TP-Link",
@@ -2540,7 +2621,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 14840
     },
     {
       "brand": "TP-Link",
@@ -2570,7 +2652,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 6740
     },
     {
       "brand": "TP-Link",
@@ -2604,7 +2687,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 13040
     },
     {
       "brand": "TP-Link",
@@ -2634,7 +2718,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3140
     },
     {
       "brand": "TP-Link",
@@ -2664,7 +2749,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4940
     },
     {
       "brand": "TP-Link",
@@ -2694,7 +2780,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 5840
     },
     {
       "brand": "TP-Link",
@@ -2726,7 +2813,8 @@
         "/images/cp-unp-d2521l10-daq.jpg",
         "/images/cp-unp-d2521l10-daq.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 13040
     },
     {
       "brand": "TP-Link",
@@ -2756,7 +2844,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4040
     },
     {
       "brand": "TP-Link",
@@ -2790,7 +2879,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 14840
     },
     {
       "brand": "TP-Link",
@@ -2820,7 +2910,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 5840
     },
     {
       "brand": "TP-Link",
@@ -2850,7 +2941,8 @@
         "/images/cp-usc-da24l2.jpg",
         "/images/cp-usc-da24l2.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 2240
     },
     {
       "brand": "TP-Link",
@@ -2880,7 +2972,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3140
     },
     {
       "brand": "TP-Link",
@@ -2912,7 +3005,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 14840
     },
     {
       "brand": "TP-Link",
@@ -2942,7 +3036,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 6740
     },
     {
       "brand": "TP-Link",
@@ -2976,7 +3071,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 13040
     },
     {
       "brand": "TP-Link",
@@ -3006,7 +3102,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3140
     },
     {
       "brand": "TP-Link",
@@ -3036,7 +3133,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4940
     },
     {
       "brand": "TP-Link",
@@ -3066,7 +3164,8 @@
         "/images/cp-unc-ta41l3-d.jpg",
         "/images/cp-unc-ta41l3-d.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 5840
     },
     {
       "brand": "TP-Link",
@@ -3098,7 +3197,8 @@
         "/images/cp-unp-d2521l10-daq.jpg",
         "/images/cp-unp-d2521l10-daq.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 13040
     },
     {
       "brand": "Dahua",
@@ -3132,7 +3232,8 @@
         "/images/hikvision-colorvu.jpg",
         "/images/hikvision-colorvu.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 10340
     },
     {
       "brand": "CP PLUS",
@@ -3166,7 +3267,8 @@
         "/images/solar-camera.jpg",
         "/images/solar-camera.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 3490
     }
   ],
   "dvr": [
@@ -3197,7 +3299,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "CP PLUS",
@@ -3226,7 +3329,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7490
     },
     {
       "brand": "CP PLUS",
@@ -3255,7 +3359,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 12490
     },
     {
       "brand": "CP PLUS",
@@ -3284,7 +3389,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "CP PLUS",
@@ -3313,7 +3419,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "CP PLUS",
@@ -3342,7 +3449,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7490
     },
     {
       "brand": "CP PLUS",
@@ -3371,7 +3479,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 12490
     },
     {
       "brand": "CP PLUS",
@@ -3400,7 +3509,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "Hikvision",
@@ -3429,7 +3539,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "Hikvision",
@@ -3458,7 +3569,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7490
     },
     {
       "brand": "Hikvision",
@@ -3487,7 +3599,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 12490
     },
     {
       "brand": "Hikvision",
@@ -3516,7 +3629,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "Hikvision",
@@ -3545,7 +3659,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "Hikvision",
@@ -3574,7 +3689,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7490
     },
     {
       "brand": "Hikvision",
@@ -3603,7 +3719,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 12490
     },
     {
       "brand": "Hikvision",
@@ -3632,7 +3749,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "Dahua",
@@ -3661,7 +3779,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "Dahua",
@@ -3690,7 +3809,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7490
     },
     {
       "brand": "Dahua",
@@ -3719,7 +3839,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 12490
     },
     {
       "brand": "Dahua",
@@ -3748,7 +3869,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "Dahua",
@@ -3777,7 +3899,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "Dahua",
@@ -3806,7 +3929,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7490
     },
     {
       "brand": "Dahua",
@@ -3835,7 +3959,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 12490
     },
     {
       "brand": "Dahua",
@@ -3864,7 +3989,8 @@
         "/images/hdd-drive.jpg",
         "/images/hdd-drive.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 4490
     },
     {
       "brand": "Hikvision",
@@ -3897,7 +4023,8 @@
         "/images/cp-cosmic-dvr.jpg",
         "/images/cp-cosmic-dvr.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7490
     }
   ],
   "nvr": [
@@ -3928,7 +4055,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "CP PLUS",
@@ -3957,7 +4085,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "CP PLUS",
@@ -3986,7 +4115,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     },
     {
       "brand": "CP PLUS",
@@ -4015,7 +4145,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "CP PLUS",
@@ -4044,7 +4175,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "CP PLUS",
@@ -4073,7 +4205,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "CP PLUS",
@@ -4102,7 +4235,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "CP PLUS",
@@ -4131,7 +4265,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     },
     {
       "brand": "Hikvision",
@@ -4160,7 +4295,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "Hikvision",
@@ -4189,7 +4325,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "Hikvision",
@@ -4218,7 +4355,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     },
     {
       "brand": "Hikvision",
@@ -4247,7 +4385,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "Hikvision",
@@ -4276,7 +4415,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "Hikvision",
@@ -4305,7 +4445,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "Hikvision",
@@ -4334,7 +4475,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "Hikvision",
@@ -4363,7 +4505,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     },
     {
       "brand": "Dahua",
@@ -4392,7 +4535,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "Dahua",
@@ -4421,7 +4565,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "Dahua",
@@ -4450,7 +4595,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     },
     {
       "brand": "Dahua",
@@ -4479,7 +4625,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "Dahua",
@@ -4508,7 +4655,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "Dahua",
@@ -4537,7 +4685,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "Dahua",
@@ -4566,7 +4715,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "Dahua",
@@ -4595,7 +4745,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     },
     {
       "brand": "EZVIZ",
@@ -4624,7 +4775,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "EZVIZ",
@@ -4653,7 +4805,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "EZVIZ",
@@ -4682,7 +4835,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     },
     {
       "brand": "EZVIZ",
@@ -4711,7 +4865,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "EZVIZ",
@@ -4740,7 +4895,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "EZVIZ",
@@ -4769,7 +4925,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "EZVIZ",
@@ -4798,7 +4955,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "EZVIZ",
@@ -4827,7 +4985,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     },
     {
       "brand": "TP-Link",
@@ -4856,7 +5015,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "TP-Link",
@@ -4885,7 +5045,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "TP-Link",
@@ -4914,7 +5075,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     },
     {
       "brand": "TP-Link",
@@ -4943,7 +5105,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "TP-Link",
@@ -4972,7 +5135,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "TP-Link",
@@ -5001,7 +5165,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 7990
     },
     {
       "brand": "TP-Link",
@@ -5030,7 +5195,8 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 11990
     },
     {
       "brand": "TP-Link",
@@ -5059,11 +5225,359 @@
         "/images/nvr-recorder.jpg",
         "/images/nvr-recorder.jpg"
       ],
-      "has360": false
+      "has360": false,
+      "price": 19990
     }
   ],
-  "power": [],
-  "cables": [],
+  "power": [
+    {
+      "brand": "CP PLUS",
+      "model": "CP-SMPS-4CH",
+      "name": "4 Channel CCTV Power Supply (12V 5A)",
+      "desc": "Reliable CP PLUS 4-channel SMPS power supply for up to 4 CCTV cameras. Built-in surge protection and short circuit protection.",
+      "type": "Accessories / Power Supply",
+      "tags": [
+        "4 Channel",
+        "12V 5A",
+        "SMPS",
+        "Power"
+      ],
+      "specs": {
+        "Brand": "CP PLUS",
+        "Output": "12V DC, 5A",
+        "Channels": "4",
+        "Protection": "Surge & Short Circuit"
+      },
+      "images": [
+        "/images/products/placeholder-smps.jpg"
+      ],
+      "price": 650
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-SMPS-8CH",
+      "name": "8 Channel CCTV Power Supply (12V 10A)",
+      "desc": "Heavy-duty CP PLUS 8-channel SMPS power supply for up to 8 CCTV cameras. Built-in surge protection and thermal cutoff.",
+      "type": "Accessories / Power Supply",
+      "tags": [
+        "8 Channel",
+        "12V 10A",
+        "SMPS",
+        "Power"
+      ],
+      "specs": {
+        "Brand": "CP PLUS",
+        "Output": "12V DC, 10A",
+        "Channels": "8",
+        "Protection": "Surge & Short Circuit"
+      },
+      "images": [
+        "/images/products/placeholder-smps.jpg"
+      ],
+      "price": 950
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-SMPS-16CH",
+      "name": "16 Channel CCTV Power Supply (12V 20A)",
+      "desc": "Industrial-grade CP PLUS 16-channel SMPS power supply for up to 16 CCTV cameras. Rack mountable design with active cooling.",
+      "type": "Accessories / Power Supply",
+      "tags": [
+        "16 Channel",
+        "12V 20A",
+        "SMPS",
+        "Power"
+      ],
+      "specs": {
+        "Brand": "CP PLUS",
+        "Output": "12V DC, 20A",
+        "Channels": "16",
+        "Protection": "Surge, Short Circuit, Thermal"
+      },
+      "images": [
+        "/images/products/placeholder-smps.jpg"
+      ],
+      "price": 1550
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HIKVISION-SMPS-4CH",
+      "name": "4 Channel CCTV Power Supply (12V 5A)",
+      "desc": "Reliable Hikvision 4-channel SMPS power supply for up to 4 CCTV cameras. Built-in surge protection and short circuit protection.",
+      "type": "Accessories / Power Supply",
+      "tags": [
+        "4 Channel",
+        "12V 5A",
+        "SMPS",
+        "Power"
+      ],
+      "specs": {
+        "Brand": "Hikvision",
+        "Output": "12V DC, 5A",
+        "Channels": "4",
+        "Protection": "Surge & Short Circuit"
+      },
+      "images": [
+        "/images/products/placeholder-smps.jpg"
+      ],
+      "price": 650
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HIKVISION-SMPS-8CH",
+      "name": "8 Channel CCTV Power Supply (12V 10A)",
+      "desc": "Heavy-duty Hikvision 8-channel SMPS power supply for up to 8 CCTV cameras. Built-in surge protection and thermal cutoff.",
+      "type": "Accessories / Power Supply",
+      "tags": [
+        "8 Channel",
+        "12V 10A",
+        "SMPS",
+        "Power"
+      ],
+      "specs": {
+        "Brand": "Hikvision",
+        "Output": "12V DC, 10A",
+        "Channels": "8",
+        "Protection": "Surge & Short Circuit"
+      },
+      "images": [
+        "/images/products/placeholder-smps.jpg"
+      ],
+      "price": 950
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HIKVISION-SMPS-16CH",
+      "name": "16 Channel CCTV Power Supply (12V 20A)",
+      "desc": "Industrial-grade Hikvision 16-channel SMPS power supply for up to 16 CCTV cameras. Rack mountable design with active cooling.",
+      "type": "Accessories / Power Supply",
+      "tags": [
+        "16 Channel",
+        "12V 20A",
+        "SMPS",
+        "Power"
+      ],
+      "specs": {
+        "Brand": "Hikvision",
+        "Output": "12V DC, 20A",
+        "Channels": "16",
+        "Protection": "Surge, Short Circuit, Thermal"
+      },
+      "images": [
+        "/images/products/placeholder-smps.jpg"
+      ],
+      "price": 1550
+    },
+    {
+      "brand": "Dahua",
+      "model": "DAHUA-SMPS-4CH",
+      "name": "4 Channel CCTV Power Supply (12V 5A)",
+      "desc": "Reliable Dahua 4-channel SMPS power supply for up to 4 CCTV cameras. Built-in surge protection and short circuit protection.",
+      "type": "Accessories / Power Supply",
+      "tags": [
+        "4 Channel",
+        "12V 5A",
+        "SMPS",
+        "Power"
+      ],
+      "specs": {
+        "Brand": "Dahua",
+        "Output": "12V DC, 5A",
+        "Channels": "4",
+        "Protection": "Surge & Short Circuit"
+      },
+      "images": [
+        "/images/products/placeholder-smps.jpg"
+      ],
+      "price": 650
+    },
+    {
+      "brand": "Dahua",
+      "model": "DAHUA-SMPS-8CH",
+      "name": "8 Channel CCTV Power Supply (12V 10A)",
+      "desc": "Heavy-duty Dahua 8-channel SMPS power supply for up to 8 CCTV cameras. Built-in surge protection and thermal cutoff.",
+      "type": "Accessories / Power Supply",
+      "tags": [
+        "8 Channel",
+        "12V 10A",
+        "SMPS",
+        "Power"
+      ],
+      "specs": {
+        "Brand": "Dahua",
+        "Output": "12V DC, 10A",
+        "Channels": "8",
+        "Protection": "Surge & Short Circuit"
+      },
+      "images": [
+        "/images/products/placeholder-smps.jpg"
+      ],
+      "price": 950
+    },
+    {
+      "brand": "Dahua",
+      "model": "DAHUA-SMPS-16CH",
+      "name": "16 Channel CCTV Power Supply (12V 20A)",
+      "desc": "Industrial-grade Dahua 16-channel SMPS power supply for up to 16 CCTV cameras. Rack mountable design with active cooling.",
+      "type": "Accessories / Power Supply",
+      "tags": [
+        "16 Channel",
+        "12V 20A",
+        "SMPS",
+        "Power"
+      ],
+      "specs": {
+        "Brand": "Dahua",
+        "Output": "12V DC, 20A",
+        "Channels": "16",
+        "Protection": "Surge, Short Circuit, Thermal"
+      },
+      "images": [
+        "/images/products/placeholder-smps.jpg"
+      ],
+      "price": 1550
+    }
+  ],
+  "cables": [
+    {
+      "brand": "CP PLUS",
+      "model": "CP-3+1-90M",
+      "name": "90m 3+1 CCTV Copper Cable",
+      "desc": "High-quality CP PLUS 3+1 copper cable roll (90 meters) for analog and HDCVI CCTV cameras. Provides excellent video and power transmission.",
+      "type": "Accessories / Cable",
+      "tags": [
+        "90m",
+        "3+1 Coaxial",
+        "Copper",
+        "Analog/HD"
+      ],
+      "specs": {
+        "Brand": "CP PLUS",
+        "Type": "3+1 Coaxial",
+        "Length": "90 Meters",
+        "Conductor": "Copper"
+      },
+      "images": [
+        "/images/products/placeholder-cable.jpg"
+      ],
+      "price": 1350
+    },
+    {
+      "brand": "CP PLUS",
+      "model": "CP-CAT6-305M",
+      "name": "305m CAT6 UTP Network Cable",
+      "desc": "Premium CP PLUS CAT6 unshielded twisted pair (UTP) networking cable roll (305 meters). Ideal for IP cameras and network infrastructure.",
+      "type": "Accessories / Cable",
+      "tags": [
+        "305m",
+        "CAT6",
+        "UTP",
+        "IP Camera"
+      ],
+      "specs": {
+        "Brand": "CP PLUS",
+        "Type": "CAT6 UTP",
+        "Length": "305 Meters",
+        "Jacket": "PVC"
+      },
+      "images": [
+        "/images/products/placeholder-cable.jpg"
+      ],
+      "price": 4200
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HIKVISION-3+1-90M",
+      "name": "90m 3+1 CCTV Copper Cable",
+      "desc": "High-quality Hikvision 3+1 copper cable roll (90 meters) for analog and HDCVI CCTV cameras. Provides excellent video and power transmission.",
+      "type": "Accessories / Cable",
+      "tags": [
+        "90m",
+        "3+1 Coaxial",
+        "Copper",
+        "Analog/HD"
+      ],
+      "specs": {
+        "Brand": "Hikvision",
+        "Type": "3+1 Coaxial",
+        "Length": "90 Meters",
+        "Conductor": "Copper"
+      },
+      "images": [
+        "/images/products/placeholder-cable.jpg"
+      ],
+      "price": 1450
+    },
+    {
+      "brand": "Hikvision",
+      "model": "HIKVISION-CAT6-305M",
+      "name": "305m CAT6 UTP Network Cable",
+      "desc": "Premium Hikvision CAT6 unshielded twisted pair (UTP) networking cable roll (305 meters). Ideal for IP cameras and network infrastructure.",
+      "type": "Accessories / Cable",
+      "tags": [
+        "305m",
+        "CAT6",
+        "UTP",
+        "IP Camera"
+      ],
+      "specs": {
+        "Brand": "Hikvision",
+        "Type": "CAT6 UTP",
+        "Length": "305 Meters",
+        "Jacket": "PVC"
+      },
+      "images": [
+        "/images/products/placeholder-cable.jpg"
+      ],
+      "price": 4500
+    },
+    {
+      "brand": "Dahua",
+      "model": "DAHUA-3+1-90M",
+      "name": "90m 3+1 CCTV Copper Cable",
+      "desc": "High-quality Dahua 3+1 copper cable roll (90 meters) for analog and HDCVI CCTV cameras. Provides excellent video and power transmission.",
+      "type": "Accessories / Cable",
+      "tags": [
+        "90m",
+        "3+1 Coaxial",
+        "Copper",
+        "Analog/HD"
+      ],
+      "specs": {
+        "Brand": "Dahua",
+        "Type": "3+1 Coaxial",
+        "Length": "90 Meters",
+        "Conductor": "Copper"
+      },
+      "images": [
+        "/images/products/placeholder-cable.jpg"
+      ],
+      "price": 1350
+    },
+    {
+      "brand": "Dahua",
+      "model": "DAHUA-CAT6-305M",
+      "name": "305m CAT6 UTP Network Cable",
+      "desc": "Premium Dahua CAT6 unshielded twisted pair (UTP) networking cable roll (305 meters). Ideal for IP cameras and network infrastructure.",
+      "type": "Accessories / Cable",
+      "tags": [
+        "305m",
+        "CAT6",
+        "UTP",
+        "IP Camera"
+      ],
+      "specs": {
+        "Brand": "Dahua",
+        "Type": "CAT6 UTP",
+        "Length": "305 Meters",
+        "Jacket": "PVC"
+      },
+      "images": [
+        "/images/products/placeholder-cable.jpg"
+      ],
+      "price": 4200
+    }
+  ],
   "accessories": [],
   "services": []
 }

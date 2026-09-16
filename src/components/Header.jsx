@@ -1,18 +1,40 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useCart } from '../context/CartContext';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const { toggleCart, cartCount } = useCart();
+  const [searchFocused, setSearchFocused] = useState(false);
+  const searchRef = useRef(null);
+  
+  const { toggleCart, cartCount, searchQuery, setSearchQuery, allProducts, setSelectedProduct } = useCart();
+
+  const suggestions = useMemo(() => {
+    if (!searchQuery || !searchQuery.trim() || !allProducts) return [];
+    const q = searchQuery.toLowerCase();
+    return allProducts.filter(p => 
+      (p.name && p.name.toLowerCase().includes(q)) ||
+      (p.model && p.model.toLowerCase().includes(q)) ||
+      (p.brand && p.brand.toLowerCase().includes(q)) ||
+      (p.desc && p.desc.toLowerCase().includes(q)) ||
+      (p.tags && Array.isArray(p.tags) ? p.tags.some(t => typeof t === 'string' && t.toLowerCase().includes(q)) : (typeof p.tags === 'string' && p.tags.toLowerCase().includes(q)))
+    ).slice(0, 6);
+  }, [searchQuery, allProducts]);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setSearchFocused(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      setMenuOpen(prev => {
-        if (prev) return false;
-        return prev;
-      });
+      setMenuOpen(false);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -24,16 +46,99 @@ const Header = () => {
         <a href="/" className="logo">
           Hanuman <span>Enterprises</span>
         </a>
-        <nav className="desktop-nav">
-          <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </nav>
+        <div className="desktop-search" style={{ flex: 1, maxWidth: '500px', margin: '0 2rem' }} ref={searchRef}>
+          <div style={{ position: 'relative', width: '100%' }}>
+            <input 
+              type="text" 
+              placeholder="Search products, models, tags..." 
+              value={searchQuery || ''}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setSearchFocused(true);
+              }}
+              style={{
+                width: '100%',
+                padding: '0.6rem 1rem 0.6rem 2.5rem',
+                borderRadius: '50px',
+                border: '1px solid #e5e7eb',
+                background: 'rgba(255, 255, 255, 0.8)',
+                fontSize: '0.95rem',
+                outline: 'none',
+                boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.05)',
+                transition: 'border-color 0.3s, box-shadow 0.3s'
+              }}
+              onFocus={(e) => {
+                setSearchFocused(true);
+                e.target.style.borderColor = '#ea580c';
+                e.target.style.boxShadow = '0 0 0 3px rgba(234, 88, 12, 0.1)';
+              }}
+              onBlur={(e) => {
+                e.target.style.borderColor = '#e5e7eb';
+                e.target.style.boxShadow = 'inset 0 1px 3px rgba(0,0,0,0.05)';
+              }}
+            />
+            <span style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', opacity: 0.5, fontSize: '0.9rem' }}>
+              🔍
+            </span>
+            
+            {/* Search Suggestions Dropdown */}
+            {searchFocused && searchQuery && searchQuery.trim().length > 0 && (
+              <div className="custom-scrollbar" style={{
+                position: 'absolute', top: '110%', left: 0, width: '100%',
+                background: '#ffffff', borderRadius: '8px', boxShadow: '0 12px 30px rgba(0,0,0,0.12), 0 4px 6px rgba(0,0,0,0.05)',
+                border: '1px solid #e5e7eb', zIndex: 1000, overflowY: 'auto', maxHeight: '450px'
+              }}>
+                {suggestions.length > 0 ? (
+                  suggestions.map((item, idx) => (
+                    <div 
+                      key={idx} 
+                      onClick={() => {
+                        window.location.hash = `#product/${encodeURIComponent(item.model)}`;
+                        setSearchQuery('');
+                        setSearchFocused(false);
+                      }}
+                      style={{ 
+                        padding: '1rem', display: 'flex', alignItems: 'center', gap: '1rem', 
+                        cursor: 'pointer', borderBottom: idx < suggestions.length - 1 ? '1px solid #f3f4f6' : 'none',
+                        transition: 'all 0.2s ease', borderLeft: '3px solid transparent'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = '#f9fafb';
+                        e.currentTarget.style.borderLeft = `3px solid #ea580c`;
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'transparent';
+                        e.currentTarget.style.borderLeft = '3px solid transparent';
+                      }}
+                    >
+                      <div style={{ width: '48px', height: '48px', background: '#fff', border: '1px solid #f3f4f6', borderRadius: '6px', padding: '0.2rem', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        {item.images && item.images[0] ? (
+                          <img src={item.images[0]} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                        ) : (
+                          <span style={{ fontSize: '1.4rem', color: '#d1d5db' }}>📷</span>
+                        )}
+                      </div>
+                      <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
+                        <h4 style={{ margin: 0, fontSize: '0.9rem', color: '#111827', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', fontWeight: 600 }}>{item.name}</h4>
+                        <p style={{ margin: 0, fontSize: '0.75rem', color: '#6b7280' }}>
+                          <span style={{ fontWeight: 700, color: '#ea580c' }}>{item.brand}</span> <span style={{ opacity: 0.5 }}>|</span> {item.model}
+                        </p>
+                      </div>
+                      <div style={{ fontWeight: 800, fontSize: '1rem', color: '#111827', display: 'flex', alignItems: 'center' }}>
+                        {item.price ? `₹${item.price.toLocaleString('en-IN')}` : <span style={{ fontSize: '0.75rem', color: '#9ca3af', fontWeight: 500 }}>Price on Request</span>}
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <div style={{ padding: '1.5rem', textAlign: 'center', color: '#6b7280', fontSize: '0.95rem' }}>
+                    <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '0.5rem' }}>😕</span>
+                    No products found for "<strong>{searchQuery}</strong>"
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <button 
             onClick={toggleCart}
@@ -89,7 +194,7 @@ const Header = () => {
       <style>{`
         .mobile-menu-btn { display: none; }
         @media (max-width: 768px) {
-          .desktop-nav { display: none; }
+          .desktop-search { display: none; }
           .mobile-menu-btn { display: block; }
         }
       `}</style>

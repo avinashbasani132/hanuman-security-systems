@@ -1,4 +1,5 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import React, { createContext, useState, useContext, useEffect, useMemo } from 'react';
+import ALL_PRODUCTS from '../data/products.json';
 
 const CartContext = createContext();
 
@@ -13,10 +14,22 @@ export const CartProvider = ({ children }) => {
   });
 
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   // ── Customer Details Modal state ──────────────────────────────────────────
   const [showCustomerForm, setShowCustomerForm] = useState(false);
   const [pendingProduct,   setPendingProduct]   = useState(null);
+  const [selectedProduct,  setSelectedProduct]  = useState(null);
+
+  const allProducts = useMemo(() => {
+    const baseProducts = Object.values(ALL_PRODUCTS).flat();
+    try {
+      const customProducts = JSON.parse(localStorage.getItem('cctv_custom_products') || '[]');
+      return [...customProducts, ...baseProducts]; // Custom products first
+    } catch(e) {
+      return baseProducts;
+    }
+  }, []);
   const [customerDetails,  setCustomerDetails]  = useState(() => {
     try {
       const saved = localStorage.getItem('cctv_customer');
@@ -41,7 +54,6 @@ export const CartProvider = ({ children }) => {
     // If customer details are already collected, bypass the form
     if (customerDetails && customerDetails.name && customerDetails.phone) {
       addToCart(product);
-      setIsCartOpen(true); // Automatically open the cart to show it was added
       return;
     }
     setPendingProduct(product);
@@ -99,11 +111,11 @@ export const CartProvider = ({ children }) => {
   return (
     <CartContext.Provider value={{
       cart, addToCart, removeFromCart, updateQuantity, clearCart, cartCount,
-      isCartOpen, setIsCartOpen, toggleCart,
-      showCustomerForm, setShowCustomerForm,
-      pendingProduct,
-      customerDetails, setCustomerDetails,
-      openCustomerForm, confirmAddToCart,
+      isCartOpen, toggleCart,
+      showCustomerForm, setShowCustomerForm, customerDetails, setCustomerDetails,
+      openCustomerForm, confirmAddToCart, pendingProduct, setPendingProduct,
+      searchQuery, setSearchQuery,
+      allProducts, selectedProduct, setSelectedProduct
     }}>
       {children}
     </CartContext.Provider>
