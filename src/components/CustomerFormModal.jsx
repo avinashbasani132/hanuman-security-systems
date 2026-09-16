@@ -158,12 +158,6 @@ const CustomerFormModal = () => {
         .cfm-submit-btn:hover {
           transform: translateY(-2px);
         }
-        /* Mobile: collapse 2-col input rows to 1 col */
-        @media (max-width: 520px) {
-          .cfm-row-2 { grid-template-columns: 1fr !important; }
-          .cfm-row-3 { grid-template-columns: 1fr !important; }
-          .cfm-box   { border-radius: 16px 16px 0 0 !important; }
-        }
       `}</style>
 
       {/* OVERLAY */}
@@ -279,7 +273,7 @@ const CustomerFormModal = () => {
 
                     <div style={{ display: 'grid', gap: '1rem' }}>
                       {/* Row 1 */}
-                      <div className="cfm-row-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                         <Field label="Full Name"      id="cfm-name"   value={customerDetails.name}   onChange={handleChange('name')}   placeholder="e.g. Ravi Kumar"    required error={errors.name} />
                         <Field label="Mobile Number"  id="cfm-phone"  type="tel" value={customerDetails.phone}  onChange={handleChange('phone')}  placeholder="e.g. 9876543210"    required error={errors.phone} />
                       </div>
@@ -291,7 +285,7 @@ const CustomerFormModal = () => {
                       <Field label="Full Address"  id="cfm-address"  value={customerDetails.address}  onChange={handleChange('address')}  placeholder="House no., Street, Area, Colony..." required error={errors.address} />
 
                       {/* Row 3 */}
-                      <div className="cfm-row-3" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1rem' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1rem' }}>
                         <Field label="City / Town" id="cfm-city"    value={customerDetails.city}    onChange={handleChange('city')}    placeholder="e.g. Hyderabad" required error={errors.city} />
                         <Field label="Pincode"     id="cfm-pincode" value={customerDetails.pincode} onChange={handleChange('pincode')} placeholder="6 digits"       required error={errors.pincode} />
                       </div>

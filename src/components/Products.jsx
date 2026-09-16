@@ -283,11 +283,11 @@ const Products = () => {
               {brandProducts.map((item, idx) => {
                 const col = brandColors[item.brand] || '#6366f1';
                 return (
-                  <div key={idx} className="card product-card-compact"
+                  <div key={idx} className="card"
                     style={{ background:'#fff', cursor:'pointer', display:'flex', flexDirection:'column', padding:'1.25rem' }}
                     onClick={() => openProduct(item)}>
                     {/* image */}
-                    <div className="pc-img" style={{ height:'155px', background:'#f8f9fc', borderRadius:'10px', overflow:'hidden', marginBottom:'0.9rem', border:'1px solid #f0f0f0', display:'flex', alignItems:'center', justifyContent:'center', position:'relative' }}>
+                    <div style={{ height:'155px', background:'#f8f9fc', borderRadius:'10px', overflow:'hidden', marginBottom:'0.9rem', border:'1px solid #f0f0f0', display:'flex', alignItems:'center', justifyContent:'center', position:'relative' }}>
                       <img src={item.images[0]} alt={item.name}
                         style={{ width:'100%', height:'100%', objectFit:'contain', padding:'10px', position:'absolute', zIndex:2 }}
                         onError={e => { 
@@ -304,18 +304,18 @@ const Products = () => {
                     <span style={{ fontSize:'0.68rem', fontWeight:700, letterSpacing:'0.06em', padding:'0.18rem 0.55rem', borderRadius:'999px', background:`${col}15`, color:col, alignSelf:'flex-start', marginBottom:'0.5rem', border:`1px solid ${col}40` }}>
                       {item.brand}
                     </span>
-                    <h3 className="pc-name" style={{ fontSize:'0.93rem', fontWeight:700, color:'var(--text-primary)', marginBottom:'0.2rem', lineHeight:1.35 }}>{item.name}</h3>
-                    <p className="pc-model" style={{ fontSize:'0.76rem', color:col, fontWeight:600, marginBottom:'0.45rem' }}>{item.model}</p>
-                    <p className="pc-desc" style={{ fontSize:'0.82rem', color:'var(--text-secondary)', flex:1, lineHeight:1.55 }}>{item.desc}</p>
+                    <h3 style={{ fontSize:'0.93rem', fontWeight:700, color:'var(--text-primary)', marginBottom:'0.2rem', lineHeight:1.35 }}>{item.name}</h3>
+                    <p style={{ fontSize:'0.76rem', color:col, fontWeight:600, marginBottom:'0.45rem' }}>{item.model}</p>
+                    <p style={{ fontSize:'0.82rem', color:'var(--text-secondary)', flex:1, lineHeight:1.55 }}>{item.desc}</p>
                     {/* feature pills – first 3 */}
-                    <div className="pc-tags" style={{ display:'flex', flexWrap:'wrap', gap:'0.25rem', margin:'0.6rem 0' }}>
+                    <div style={{ display:'flex', flexWrap:'wrap', gap:'0.25rem', margin:'0.6rem 0' }}>
                       {item.tags.slice(0,3).map((t,ti) => (
-                        <span key={ti} className="pc-tag" style={{ fontSize:'0.66rem', padding:'0.15rem 0.42rem', borderRadius:'999px', background:'#f3f4f6', color:'#6b7280', border:'1px solid #e5e7eb' }}>{t}</span>
+                        <span key={ti} style={{ fontSize:'0.66rem', padding:'0.15rem 0.42rem', borderRadius:'999px', background:'#f3f4f6', color:'#6b7280', border:'1px solid #e5e7eb' }}>{t}</span>
                       ))}
                     </div>
-                    <div className="pc-btns" style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                    <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
                       <button 
-                        className="btn btn-secondary pc-btn" 
+                        className="btn btn-secondary" 
                         style={{ flex: 1, padding: '0.55rem', marginLeft: 0, fontSize: '0.82rem' }}
                         onClick={(e) => { e.stopPropagation(); openProduct(item); }}
                       >
@@ -332,7 +332,7 @@ const Products = () => {
                           </div>
                         ) : (
                           <button 
-                            className="btn btn-primary pc-btn" 
+                            className="btn btn-primary" 
                             style={{ flex: 1, padding: '0.55rem', fontSize: '0.82rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem' }}
                             onClick={(e) => { e.stopPropagation(); openCustomerForm(item); }}
                           >
