@@ -368,12 +368,7 @@ const Solutions = () => {
           .stats-row { grid-template-columns: 1fr 1fr; }
         }
         /* Mobile: solution cards 1 column */
-        @media (max-width: 480px) {
-          #solutions .container > div[style*="auto-fill"] {
-            grid-template-columns: 1fr 1fr !important;
-          }
-        }
-        @media (max-width: 360px) {
+        @media (max-width: 768px) {
           #solutions .container > div[style*="auto-fill"] {
             grid-template-columns: 1fr !important;
           }
