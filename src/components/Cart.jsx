@@ -5,10 +5,7 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 
 const Cart = () => {
-  const { cart, isCartOpen, toggleCart, removeFromCart, updateQuantity, clearCart } = useCart();
-  const [customerName, setCustomerName] = useState('');
-  const [contactNo, setContactNo] = useState('');
-  const [address, setAddress] = useState('');
+  const { cart, isCartOpen, toggleCart, removeFromCart, updateQuantity, clearCart, customerDetails, setShowCustomerForm } = useCart();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -16,8 +13,11 @@ const Cart = () => {
 
   const handleCheckout = async () => {
     if (cart.length === 0) return;
-    if (!customerName || !contactNo || !address) {
-      setErrorMsg('Please fill in all details (Name, Contact No, Address).');
+    
+    // Fallback validation just in case
+    const { name, phone, address } = customerDetails;
+    if (!name || !phone || !address) {
+      setErrorMsg('Please click "Edit Details" and fill in your info.');
       return;
     }
     
@@ -30,9 +30,9 @@ const Cart = () => {
         .from('orders')
         .insert([
           { 
-            customer_name: customerName, 
-            contact_no: contactNo, 
-            address: address, 
+            customer_name: customerDetails.name, 
+            contact_no: customerDetails.phone, 
+            address: `${customerDetails.address}, ${customerDetails.city} - ${customerDetails.pincode}`, 
             items: cart 
           }
         ]);
@@ -48,9 +48,11 @@ const Cart = () => {
       
       let message = `*NEW ORDER* from Hanuman Enterprises Website\n\n`;
       message += `*Customer Details:*\n`;
-      message += `Name: ${customerName}\n`;
-      message += `Contact No: ${contactNo}\n`;
-      message += `Address: ${address}\n`;
+      message += `Name: ${customerDetails.name}\n`;
+      message += `Contact No: ${customerDetails.phone}\n`;
+      if (customerDetails.email) message += `Email: ${customerDetails.email}\n`;
+      message += `Address: ${customerDetails.address}, ${customerDetails.city} - ${customerDetails.pincode}\n`;
+      if (customerDetails.landmark) message += `Landmark: ${customerDetails.landmark}\n`;
       message += `\n*Order Summary:*\n`;
       
       cart.forEach(item => {
@@ -108,31 +110,17 @@ const Cart = () => {
         {cart.length > 0 && (
           <div className="cart-footer">
             {errorMsg && <p style={{ color: '#ef4444', fontSize: '0.85rem', marginBottom: '0.8rem', textAlign: 'center', fontWeight: 'bold' }}>{errorMsg}</p>}
-            <input 
-              type="text" 
-              placeholder="Full Name *" 
-              value={customerName}
-              onChange={e => setCustomerName(e.target.value)}
-              className="cart-input"
-              required
-            />
-            <input 
-              type="tel" 
-              placeholder="Contact Number *" 
-              value={contactNo}
-              onChange={e => setContactNo(e.target.value)}
-              className="cart-input"
-              required
-            />
-            <textarea 
-              placeholder="Delivery Address *" 
-              value={address}
-              onChange={e => setAddress(e.target.value)}
-              className="cart-input"
-              rows={3}
-              style={{ resize: 'none' }}
-              required
-            />
+            
+            {/* Display Saved Customer Details */}
+            <div className="saved-details">
+              <div className="saved-details-header">
+                <h4>Billing Details</h4>
+                <button className="edit-details-btn" onClick={() => setShowCustomerForm(true)}>Edit Details</button>
+              </div>
+              <p><strong>{customerDetails.name}</strong> ({customerDetails.phone})</p>
+              <p>{customerDetails.address}, {customerDetails.city} - {customerDetails.pincode}</p>
+            </div>
+
             <button onClick={handleCheckout} disabled={isSubmitting} className="btn btn-primary checkout-btn">
               {isSubmitting ? 'Processing...' : 'Place Order via WhatsApp'}
             </button>
@@ -190,10 +178,25 @@ const Cart = () => {
         }
         .remove-btn { background: none; border: none; cursor: pointer; color: #ef4444; font-size: 1.1rem; }
         .cart-footer { padding: 1.5rem; border-top: 1px solid #f0f0f0; background: #fafbfc; }
-        .cart-input {
-          width: 100%; padding: 0.8rem; border: 1px solid #e5e7eb; border-radius: 8px;
-          margin-bottom: 1rem; font-family: inherit;
+        
+        .saved-details {
+          background: #fff;
+          border: 1px solid #e5e7eb;
+          border-radius: 8px;
+          padding: 1rem;
+          margin-bottom: 1.25rem;
         }
+        .saved-details-header {
+          display: flex; justify-content: space-between; align-items: center;
+          margin-bottom: 0.5rem;
+        }
+        .saved-details-header h4 { margin: 0; font-size: 0.9rem; color: #374151; font-weight: 700; }
+        .edit-details-btn {
+          background: none; border: none; color: #ff4a00;
+          font-size: 0.8rem; font-weight: 600; cursor: pointer; text-decoration: underline;
+        }
+        .saved-details p { margin: 0; font-size: 0.85rem; color: #6b7280; line-height: 1.4; }
+        
         .checkout-btn { width: 100%; text-align: center; margin-bottom: 1rem; font-size: 0.95rem; padding: 1rem; }
         .clear-cart-btn {
           width: 100%; background: none; border: none; color: #6b7280;
