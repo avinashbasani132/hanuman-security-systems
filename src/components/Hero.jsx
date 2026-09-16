@@ -53,9 +53,12 @@ const Hero = () => {
               borderRadius: '999px',
               padding: '0.35rem 1rem',
               marginBottom: '1.5rem',
+              maxWidth: '100%',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
             }}>
-              <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#ff4a00', display: 'inline-block', animation: 'pulse 2s infinite' }} />
-              <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#ff4a00', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+              <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#ff4a00', display: 'inline-block', animation: 'pulse 2s infinite', flexShrink: 0 }} />
+              <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#ff4a00', letterSpacing: '0.05em', textTransform: 'uppercase', textAlign: 'center' }}>
                 Professional CCTV Installation — Hyderabad
               </span>
             </div>
