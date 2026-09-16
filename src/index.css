@@ -227,6 +227,20 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+/* ── PRODUCT CARD compact (mobile-first inside brand view) ── */
+.product-card-compact {
+  padding: 0.75rem;
+  border-radius: 12px;
+}
+.product-card-compact .pc-img   { height: 100px; }
+.product-card-compact .pc-name  { font-size: 0.8rem; }
+.product-card-compact .pc-model { font-size: 0.68rem; }
+.product-card-compact .pc-desc  { display: none; }
+.product-card-compact .pc-tags  { gap: 0.2rem; }
+.product-card-compact .pc-tag   { font-size: 0.6rem; padding: 0.1rem 0.35rem; }
+.product-card-compact .pc-btns  { gap: 0.35rem; margin-top: 0.5rem; }
+.product-card-compact .pc-btn   { font-size: 0.72rem; padding: 0.45rem 0.3rem; }
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -458,6 +472,9 @@ textarea.form-control {
   /* Layout */
   .section          { padding: 2.5rem 0; }
   .container        { padding: 0 1rem; }
+
+  /* Product grid — 2 columns so 4 fit in view */
+  .grid-3           { grid-template-columns: 1fr 1fr !important; gap: 0.75rem !important; }
 
   /* Typography */
   .section-title    { font-size: 1.65rem; margin-bottom: 1.5rem; letter-spacing: -0.3px; }
