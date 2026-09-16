@@ -46,7 +46,7 @@ const Hero = () => {
           {/* ── LEFT COLUMN ── */}
           <div className="animate-fade-in">
             {/* badge */}
-            <div style={{
+            <div className="hero-badge" style={{
               display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
               background: 'rgba(255,74,0,0.08)',
               border: '1px solid rgba(255,74,0,0.2)',
@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
 
             {/* headline */}
-            <h1 style={{
+            <h1 className="hero-headline" style={{
               fontFamily: 'Outfit, sans-serif',
               fontSize: '3.6rem',
               fontWeight: 900,
@@ -76,7 +76,7 @@ const Hero = () => {
             </h1>
 
             {/* subtext */}
-            <p style={{
+            <p className="hero-sub" style={{
               fontSize: '1.05rem',
               color: '#64748b',
               lineHeight: 1.75,
@@ -125,18 +125,18 @@ const Hero = () => {
             </div>
 
             {/* stats row */}
-            <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
+            <div className="hero-stats" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
               {stats.map((s, i) => (
                 <div key={i}>
-                  <div style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.7rem', fontWeight: 900, color: '#0f172a', lineHeight: 1 }}>{s.num}</div>
-                  <div style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.2rem', fontWeight: 500 }}>{s.label}</div>
+                  <div className="hero-stat-num" style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.7rem', fontWeight: 900, color: '#0f172a', lineHeight: 1 }}>{s.num}</div>
+                  <div className="hero-stat-label" style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.2rem', fontWeight: 500 }}>{s.label}</div>
                 </div>
               ))}
             </div>
           </div>
 
           {/* ── RIGHT COLUMN ── */}
-          <div className="animate-fade-in delay-1" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div className="animate-fade-in delay-1 hero-right">
 
             {/* ── IMAGE GALLERY ── */}
             <div style={{
@@ -237,25 +237,66 @@ const Hero = () => {
           gap: 4rem;
           align-items: center;
         }
+        .hero-right { display: flex; flex-direction: column; gap: 1rem; }
+
+        /* ── 900px: stack columns ── */
         @media (max-width: 900px) {
           .hero-layout {
             grid-template-columns: 1fr;
-            gap: 2.5rem;
+            gap: 2rem;
           }
+          .hero-right { display: none; } /* hide image panel on tablet/mobile */
         }
+
+        /* ── 768px ── */
         @media (max-width: 768px) {
           .hero {
-            padding-top: 8.5rem !important;
+            padding-top: 5rem !important;
+            min-height: auto !important;
+            padding-bottom: 3rem !important;
           }
-        }
-        @media (max-width: 480px) {
+          .hero-headline {
+            font-size: 2.6rem !important;
+            letter-spacing: -0.8px !important;
+          }
+          .hero-sub {
+            font-size: 0.9rem !important;
+            margin-bottom: 1.5rem !important;
+          }
           .hero-cta-row {
-            flex-direction: column;
+            flex-direction: column !important;
+            gap: 0.75rem !important;
           }
           .hero-btn-primary, .hero-btn-secondary {
-            width: 100%;
-            text-align: center;
+            width: 100% !important;
+            text-align: center !important;
+            display: block !important;
           }
+          .hero-stats {
+            gap: 1.25rem !important;
+            flex-wrap: wrap;
+          }
+        }
+
+        /* ── 480px ── */
+        @media (max-width: 480px) {
+          .hero {
+            padding-top: 4.5rem !important;
+          }
+          .hero-headline {
+            font-size: 2rem !important;
+            letter-spacing: -0.5px !important;
+          }
+          .hero-badge span:last-child {
+            font-size: 0.68rem !important;
+          }
+          .hero-stats {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 0.85rem !important;
+          }
+          .hero-stat-num  { font-size: 1.35rem !important; }
+          .hero-stat-label { font-size: 0.7rem !important; }
         }
       `}</style>
     </section>

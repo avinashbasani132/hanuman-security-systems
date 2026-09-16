@@ -453,34 +453,114 @@ textarea.form-control {
 }
 
 
-/* ── RESPONSIVE ── */
+/* ── RESPONSIVE — 768px (tablet / large phone) ── */
 @media (max-width: 768px) {
-  .section          { padding: 3rem 0; }
-  .container        { padding: 0 1.25rem; }
-  .hero-title       { font-size: 2.2rem; line-height: 1.15; }
-  .hero-subtitle    { font-size: 0.95rem; }
+  /* Layout */
+  .section          { padding: 2.5rem 0; }
+  .container        { padding: 0 1rem; }
+
+  /* Typography */
+  .section-title    { font-size: 1.65rem; margin-bottom: 1.5rem; letter-spacing: -0.3px; }
+  .hero-title       { font-size: 2rem; line-height: 1.15; }
+  .hero-subtitle    { font-size: 0.9rem; }
+  .logo             { font-size: 1.1rem; white-space: nowrap; }
+
+  /* Navigation */
   .nav-links        { display: none; }
+
+  /* Header buttons */
+  .header-content .btn { padding: 0.4rem 0.9rem !important; font-size: 0.75rem; white-space: nowrap; }
+
+  /* Grids */
+  .grid-3           { grid-template-columns: 1fr; }
+  .grid-4           { grid-template-columns: 1fr 1fr; }
+  .contact-grid     { grid-template-columns: 1fr; }
+
+  /* Footer */
   .footer-grid      { grid-template-columns: 1fr 1fr; gap: 1.25rem 1.5rem; }
   .footer-brand-col { grid-column: 1 / -1; }
-  .footer-bottom    { flex-direction: column; gap: 0.75rem; }
-  .section-title    { font-size: 1.8rem; margin-bottom: 2rem; }
-  .logo             { font-size: 1.1rem; white-space: nowrap; }
-  .header-content .btn { padding: 0.4rem 0.8rem !important; font-size: 0.75rem; white-space: nowrap; }
-  .contact-grid     { grid-template-columns: 1fr; }
+  .footer-bottom    { flex-direction: column; gap: 0.5rem; text-align: center; }
+
+  /* Cards */
+  .card             { padding: 1.25rem; }
+
+  /* Modal */
+  .modal-content    { border-radius: 16px; max-height: 92vh; }
+  .modal-header     { padding: 1rem 1.25rem; }
+  .modal-header h2  { font-size: 1rem; }
+  .modal-body       { padding: 1rem 1.25rem; }
+
+  /* Buttons */
+  .btn              { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
 }
 
+/* ── RESPONSIVE — 480px (small phones) ── */
+@media (max-width: 480px) {
+  /* Layout */
+  .section          { padding: 2rem 0; }
+  .container        { padding: 0 0.9rem; }
+
+  /* Typography */
+  .section-title    { font-size: 1.45rem; margin-bottom: 1.25rem; }
+
+  /* Grids */
+  .grid-3           { grid-template-columns: 1fr; gap: 1rem; }
+  .grid-4           { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+
+  /* Cards */
+  .card             { padding: 1rem; border-radius: 14px; }
+  .card-icon        { font-size: 2rem; margin-bottom: 0.75rem; }
+  .card-title       { font-size: 1rem; }
+  .card-text        { font-size: 0.85rem; }
+
+  /* Buttons — full width on tiny screens */
+  .btn              { width: 100%; text-align: center; justify-content: center; }
+  .btn-secondary    { margin-left: 0; margin-top: 0.5rem; }
+
+  /* Footer */
+  .footer-grid      { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .footer-title     { font-size: 0.78rem; }
+  .footer-links a   { font-size: 0.78rem; }
+
+  /* Forms */
+  .form-control     { padding: 0.8rem 1rem; font-size: 0.88rem; }
+  textarea.form-control { min-height: 110px; }
+}
+
+/* ── RESPONSIVE — 400px (very small) ── */
 @media (max-width: 400px) {
   .logo             { font-size: 1rem; }
-  .header-content .btn { display: none; /* Hide button on very small screens to save space */ }
+  .header-content .btn { display: none; }
+  .section-title    { font-size: 1.3rem; }
 }
 
+/* ── BRAND / PRODUCT GRIDS ── */
 @media (max-width: 900px) {
   .brand-grid { grid-template-columns: repeat(2, 1fr) !important; }
 }
 
 @media (max-width: 560px) {
+  .brand-grid { grid-template-columns: 1fr 1fr !important; gap: 0.75rem !important; }
+}
+
+@media (max-width: 380px) {
   .brand-grid { grid-template-columns: 1fr !important; }
 }
+
+/* ── MODAL MOBILE ── */
+@media (max-width: 640px) {
+  .modal-overlay    { padding: 0.5rem; align-items: flex-end; }
+  .modal-content    { border-radius: 20px 20px 0 0; max-height: 95vh; }
+}
+
+/* ── PRODUCT ITEMS GRID ── */
+@media (max-width: 480px) {
+  .product-items-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .product-item-image { height: 90px; }
+  .product-item-card  { padding: 0.85rem; }
+  .product-item-card h4 { font-size: 0.82rem; }
+}
+
 
 
 /* ── MODAL ── */
