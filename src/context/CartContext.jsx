@@ -7,7 +7,7 @@ export const CartProvider = ({ children }) => {
     try {
       const savedCart = localStorage.getItem('cctv_cart');
       return savedCart ? JSON.parse(savedCart) : [];
-    } catch (e) {
+    } catch (_) {
       return [];
     }
   });
@@ -23,7 +23,7 @@ export const CartProvider = ({ children }) => {
       return saved ? JSON.parse(saved) : {
         name: '', phone: '', email: '', address: '', city: '', pincode: '', landmark: '',
       };
-    } catch (e) {
+    } catch (_) {
       return { name: '', phone: '', email: '', address: '', city: '', pincode: '', landmark: '' };
     }
   });

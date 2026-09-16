@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { supabase } from '../utils/supabase';
-import jsPDF from 'jspdf';
-import 'jspdf-autotable';
 
 const Cart = () => {
   const { cart, isCartOpen, toggleCart, removeFromCart, updateQuantity, clearCart, customerDetails, setShowCustomerForm } = useCart();

@@ -1,54 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { useCart } from '../context/CartContext';
 
-// ── TAB DEFINITIONS ─────────────────────────────────────────────────────────
-const TABS = [
-  { id: 'cameras',     label: '📷 Cameras'           },
-  { id: 'dvr',         label: '💾 DVR / XVR'          },
-  { id: 'nvr',         label: '📼 NVR'                },
-  { id: 'power',       label: '⚡ Power Supplies'     },
-  { id: 'cables',      label: '🔌 Cables'             },
-  { id: 'accessories', label: '🔧 Accessories'        },
-  { id: 'services',    label: '🛠️ Services'           },
-];
-
 // ── BRANDS ──────────────────────────────────────────────────────────────────
 const BRANDS = ['All', 'CP PLUS', 'Hikvision', 'Dahua', 'Axis', 'EZVIZ', 'TP-Link'];
-
-// ── IMAGE MAP (unique per product type) ──────────────────────────────────────
-const IMG = {
-  // cameras – real downloaded images
-  cpBullet:   '/images/cp-unc-ta41l3-d.jpg',
-  cpDome:     '/images/cp-usc-da24l2.jpg',
-  cpPtz:      '/images/cp-unp-d2521l10-daq.jpg',
-  cpWifi:     '/images/cp-e35a.jpg',
-  hikBullet:  '/images/hikvision-colorvu.jpg',
-  hikDome:    '/images/hikvision-colorvu.jpg',
-  dahuaTurret:'/images/dahua-wizsense.jpg',
-  ezvizBullet:'/images/ezviz-c3w-pro.jpg',
-  axisP3245:  '/images/axis-p3245-v.jpg',
-  axisM3106:  '/images/axis-m3106-l.jpg',
-  // solar & 4G SIM
-  solar:      '/images/solar-camera.jpg',
-  sim4g:      '/images/sim-camera.jpg',
-  sdSim:      '/images/sd-sim-card.jpg',
-  // recorders
-  dvr:        '/images/dvr-recorder.jpg',
-  nvr:        '/images/nvr-recorder.jpg',
-  // power
-  smps:       '/images/smps-power.jpg',
-  // cables
-  coax:       '/images/coax-cable.jpg',
-  cat6:       '/images/cat6-cable.jpg',
-  // accessories
-  poeSwitch:  '/images/poe-switch.jpg',
-  hdd:        '/images/hdd-drive.jpg',
-  bnc:        '/images/bnc-connector.jpg',
-  bracket:    '/images/wall-bracket.jpg',
-  ups:        '/images/ups-backup.jpg',
-  // services
-  svcImg:     '/images/service-install.jpg',
-};
 
 // ── FULL PRODUCT DATA ────────────────────────────────────────────────────────
 import ALL_PRODUCTS from '../data/products.json';
@@ -68,7 +22,7 @@ const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [activeImgIdx,    setActiveImgIdx]    = useState(0);
   const [view360,         setView360]         = useState(false);
-  const { cart, addToCart, updateQuantity, openCustomerForm } = useCart();
+  const { cart, updateQuantity, openCustomerForm } = useCart();
 
   // All products across every category flattened
   const allProducts = useMemo(() => Object.values(ALL_PRODUCTS).flat(), []);
