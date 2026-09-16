@@ -20,23 +20,28 @@ const Hero = () => {
       minHeight: '100vh',
       display: 'flex',
       alignItems: 'center',
-      background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fc 55%, #fff3ee 100%)',
+      background: 'linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)',
       paddingTop: '5rem',
       position: 'relative',
       overflow: 'hidden',
     }}>
 
-      {/* background decoration circles */}
+      {/* Premium subtle dot grid background */}
       <div style={{
-        position: 'absolute', top: '-80px', right: '-80px',
-        width: '420px', height: '420px', borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(255,74,0,0.07) 0%, transparent 70%)',
+        position: 'absolute',
+        inset: 0,
+        backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)',
+        backgroundSize: '32px 32px',
+        opacity: 0.3,
         pointerEvents: 'none',
       }} />
+      
+      {/* Top soft fade to blend with header */}
       <div style={{
-        position: 'absolute', bottom: '-60px', left: '40%',
-        width: '320px', height: '320px', borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(255,74,0,0.04) 0%, transparent 70%)',
+        position: 'absolute',
+        top: 0, left: 0, right: 0,
+        height: '150px',
+        background: 'linear-gradient(180deg, #ffffff 0%, transparent 100%)',
         pointerEvents: 'none',
       }} />
 
