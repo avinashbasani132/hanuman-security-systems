@@ -38,6 +38,12 @@ export const CartProvider = ({ children }) => {
 
   // Open customer form with the product that triggered it
   const openCustomerForm = (product) => {
+    // If customer details are already collected, bypass the form
+    if (customerDetails && customerDetails.name && customerDetails.phone) {
+      addToCart(product);
+      setIsCartOpen(true); // Automatically open the cart to show it was added
+      return;
+    }
     setPendingProduct(product);
     setShowCustomerForm(true);
   };
