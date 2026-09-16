@@ -89,6 +89,9 @@ const Hero = () => {
             {/* CTA row */}
             <div className="hero-cta-row" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
               <a href="#contact" className="hero-btn-primary" style={{
+                background: '#ff4a00',
+                color: '#ffffff',
+                padding: '0.95rem 2.25rem',
                 borderRadius: '50px',
                 fontWeight: 700,
                 fontSize: '0.95rem',

@@ -68,7 +68,7 @@ const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [activeImgIdx,    setActiveImgIdx]    = useState(0);
   const [view360,         setView360]         = useState(false);
-  const { cart, addToCart, updateQuantity } = useCart();
+  const { cart, addToCart, updateQuantity, openCustomerForm } = useCart();
 
   // All products across every category flattened
   const allProducts = useMemo(() => Object.values(ALL_PRODUCTS).flat(), []);
@@ -334,7 +334,7 @@ const Products = () => {
                           <button 
                             className="btn btn-primary" 
                             style={{ flex: 1, padding: '0.55rem', fontSize: '0.82rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem' }}
-                            onClick={(e) => { e.stopPropagation(); addToCart(item); }}
+                            onClick={(e) => { e.stopPropagation(); openCustomerForm(item); }}
                           >
                             Add 🛒
                           </button>
@@ -456,7 +456,7 @@ const Products = () => {
                       </div>
                     ) : (
                       <button 
-                        onClick={() => { addToCart(selectedProduct); }}
+                        onClick={() => { openCustomerForm(selectedProduct); }}
                         style={{
                           background: 'var(--accent-color)', color: '#fff',
                           border: 'none', padding: '0.8rem 1.5rem', borderRadius: '8px',

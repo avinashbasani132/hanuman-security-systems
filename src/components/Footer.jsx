@@ -5,10 +5,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-grid">
-          <div>
+          <div className="footer-brand-col">
             <h2 className="logo footer-logo">Hanuman <span>Enterprises</span></h2>
             <p className="footer-text">
-              Providing cutting-edge security and surveillance solutions to keep you, your family, and your business safe.
+              Professional CCTV installation &amp; security solutions for homes and businesses across Hyderabad.
             </p>
           </div>
           <div>
@@ -32,9 +32,9 @@ const Footer = () => {
           <div>
             <h4 className="footer-title">Contact</h4>
             <ul className="footer-links">
-              <li><a href="tel:+918800952952">+91-8800952952</a></li>
-              <li><a href="mailto:support@hanumanenterprises.com">support@hanumanenterprises.com</a></li>
-              <li><a href="#contact">Live Chat</a></li>
+              <li><a href="tel:+919014612983">📞 +91-9014612983</a></li>
+              <li><a href="https://wa.me/919014612983" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a></li>
+              <li><a href="#contact">Get a Free Quote</a></li>
             </ul>
           </div>
         </div>

@@ -4,7 +4,6 @@ const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(() => {
-    // Attempt to load from localStorage if available
     try {
       const savedCart = localStorage.getItem('cctv_cart');
       return savedCart ? JSON.parse(savedCart) : [];
@@ -15,9 +14,49 @@ export const CartProvider = ({ children }) => {
 
   const [isCartOpen, setIsCartOpen] = useState(false);
 
+  // ── Customer Details Modal state ──────────────────────────────────────────
+  const [showCustomerForm, setShowCustomerForm] = useState(false);
+  const [pendingProduct,   setPendingProduct]   = useState(null);
+  const [customerDetails,  setCustomerDetails]  = useState(() => {
+    try {
+      const saved = localStorage.getItem('cctv_customer');
+      return saved ? JSON.parse(saved) : {
+        name: '', phone: '', email: '', address: '', city: '', pincode: '', landmark: '',
+      };
+    } catch (e) {
+      return { name: '', phone: '', email: '', address: '', city: '', pincode: '', landmark: '' };
+    }
+  });
+
   useEffect(() => {
     localStorage.setItem('cctv_cart', JSON.stringify(cart));
   }, [cart]);
+
+  useEffect(() => {
+    localStorage.setItem('cctv_customer', JSON.stringify(customerDetails));
+  }, [customerDetails]);
+
+  // Open customer form with the product that triggered it
+  const openCustomerForm = (product) => {
+    setPendingProduct(product);
+    setShowCustomerForm(true);
+  };
+
+  // Called when the customer submits the form — actually adds product to cart
+  const confirmAddToCart = () => {
+    if (!pendingProduct) return;
+    setCart((prev) => {
+      const existing = prev.find(item => item.model === pendingProduct.model);
+      if (existing) {
+        return prev.map(item =>
+          item.model === pendingProduct.model ? { ...item, quantity: item.quantity + 1 } : item
+        );
+      }
+      return [...prev, { ...pendingProduct, quantity: 1 }];
+    });
+    setPendingProduct(null);
+    setShowCustomerForm(false);
+  };
 
   const addToCart = (product) => {
     setCart((prev) => {
@@ -40,7 +79,7 @@ export const CartProvider = ({ children }) => {
       removeFromCart(model);
       return;
     }
-    setCart((prev) => prev.map(item => 
+    setCart((prev) => prev.map(item =>
       item.model === model ? { ...item, quantity } : item
     ));
   };
@@ -54,7 +93,11 @@ export const CartProvider = ({ children }) => {
   return (
     <CartContext.Provider value={{
       cart, addToCart, removeFromCart, updateQuantity, clearCart, cartCount,
-      isCartOpen, setIsCartOpen, toggleCart
+      isCartOpen, setIsCartOpen, toggleCart,
+      showCustomerForm, setShowCustomerForm,
+      pendingProduct,
+      customerDetails, setCustomerDetails,
+      openCustomerForm, confirmAddToCart,
     }}>
       {children}
     </CartContext.Provider>
