@@ -127,7 +127,7 @@ const Hero = () => {
             {/* stats row */}
             <div className="hero-stats" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
               {stats.map((s, i) => (
-                <div key={i}>
+                <div key={i} className="hero-stat-item">
                   <div className="hero-stat-num" style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.7rem', fontWeight: 900, color: '#0f172a', lineHeight: 1 }}>{s.num}</div>
                   <div className="hero-stat-label" style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.2rem', fontWeight: 500 }}>{s.label}</div>
                 </div>
@@ -136,7 +136,7 @@ const Hero = () => {
           </div>
 
           {/* ── RIGHT COLUMN ── */}
-          <div className="animate-fade-in delay-1 hero-right">
+          <div className="animate-fade-in delay-1 hero-right" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
 
             {/* ── IMAGE GALLERY ── */}
             <div style={{
@@ -169,7 +169,7 @@ const Hero = () => {
             </div>
 
             {/* 2-col service mini-cards */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="service-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               {services.map((s, i) => (
                 <div key={i} style={{
                   background: '#fff',
@@ -200,7 +200,7 @@ const Hero = () => {
             </div>
 
             {/* trust bar */}
-            <div style={{
+            <div className="trust-bar" style={{
               background: '#fff',
               border: '1.5px solid #f0f0f0',
               borderRadius: '16px',
@@ -237,35 +237,31 @@ const Hero = () => {
           gap: 4rem;
           align-items: center;
         }
-        .hero-right { display: flex; flex-direction: column; gap: 1rem; }
-
-        /* ── 900px: stack columns ── */
         @media (max-width: 900px) {
           .hero-layout {
             grid-template-columns: 1fr;
-            gap: 2rem;
+            gap: 3rem;
           }
-          .hero-right { display: none; } /* hide image panel on tablet/mobile */
+          .hero-headline {
+            font-size: 3.2rem !important;
+          }
         }
-
-        /* ── 768px ── */
         @media (max-width: 768px) {
           .hero {
-            padding-top: 5rem !important;
-            min-height: auto !important;
+            padding-top: 6.5rem !important;
             padding-bottom: 3rem !important;
           }
           .hero-headline {
-            font-size: 2.6rem !important;
-            letter-spacing: -0.8px !important;
+            font-size: 2.5rem !important;
+            letter-spacing: -1px !important;
           }
           .hero-sub {
-            font-size: 0.9rem !important;
-            margin-bottom: 1.5rem !important;
+            font-size: 0.95rem !important;
+            margin-bottom: 1.75rem !important;
           }
           .hero-cta-row {
             flex-direction: column !important;
-            gap: 0.75rem !important;
+            gap: 0.85rem !important;
           }
           .hero-btn-primary, .hero-btn-secondary {
             width: 100% !important;
@@ -274,29 +270,41 @@ const Hero = () => {
           }
           .hero-stats {
             gap: 1.25rem !important;
-            flex-wrap: wrap;
+          }
+          .hero-stat-num {
+            font-size: 1.4rem !important;
           }
         }
-
-        /* ── 480px ── */
         @media (max-width: 480px) {
           .hero {
-            padding-top: 4.5rem !important;
+            padding-top: 5.5rem !important;
           }
-          .hero-headline {
-            font-size: 2rem !important;
-            letter-spacing: -0.5px !important;
+          .hero-badge {
+            padding: 0.35rem 0.75rem !important;
           }
           .hero-badge span:last-child {
-            font-size: 0.68rem !important;
+            font-size: 0.7rem !important;
+          }
+          .hero-headline {
+            font-size: 2.2rem !important;
           }
           .hero-stats {
             display: grid !important;
             grid-template-columns: 1fr 1fr !important;
-            gap: 0.85rem !important;
+            gap: 1rem !important;
           }
-          .hero-stat-num  { font-size: 1.35rem !important; }
-          .hero-stat-label { font-size: 0.7rem !important; }
+          .service-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .trust-bar {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 0.5rem !important;
+          }
+          .trust-bar > div:last-child {
+            margin-left: 0 !important;
+            text-align: left !important;
+          }
         }
       `}</style>
     </section>
