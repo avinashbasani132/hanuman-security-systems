@@ -24,26 +24,40 @@ A premium, modern, and highly responsive React e-commerce platform for CCTV & Se
 ### Prerequisites
 Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
+### File Structure
+This repository uses a modern, full-stack monorepo structure:
+- `/frontend`: The complete React application (Vite, Context API)
+- `/backend`: The Node.js / Express API server skeleton (Models, Controllers, Routes)
+
 ### Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/avinashbasani132/hanuman-security-systems.git
    ```
-2. Navigate into the directory:
+2. Navigate into the frontend directory:
    ```bash
-   cd hanuman-security-systems
+   cd hanuman-security-systems/frontend
    ```
-3. Install the dependencies:
+3. Install the frontend dependencies:
    ```bash
    npm install
    ```
 
 ### Running Locally
-Start the development server:
+To start the React development server, ensure you are in the `/frontend` directory:
 ```bash
 npm run dev
 ```
 The application will be available at `http://localhost:5173`.
+
+### Backend Setup (Optional)
+If you wish to run the backend API:
+```bash
+cd ../backend
+npm install
+npm run dev
+```
+The backend server will run on port 5000.
 
 ### Building for Production
 To generate a production-ready build:
