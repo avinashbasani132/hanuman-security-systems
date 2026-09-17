@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../utils/supabase';
+import { useAuth } from '../context/AuthContext';
 
 const AdminPortal = () => {
+  const { user, setShowLoginModal } = useAuth();
   const [activeTab, setActiveTab] = useState('dashboard');
   
   // Dashboard State
@@ -90,6 +92,29 @@ const AdminPortal = () => {
     if (!order.items) return total;
     return total + order.items.reduce((sum, item) => sum + (item.quantity || 1), 0);
   }, 0);
+
+  if (!user) {
+    return (
+      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#f4f5f7' }}>
+        <div style={{ background: '#fff', padding: '3rem', borderRadius: '16px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', textAlign: 'center', maxWidth: '400px' }}>
+          <h2 style={{ fontSize: '1.8rem', color: '#111827', marginBottom: '1rem' }}>Admin Access</h2>
+          <p style={{ color: '#6b7280', marginBottom: '2rem' }}>Please log in to access the administrator portal.</p>
+          <button 
+            onClick={() => setShowLoginModal(true)}
+            style={{ width: '100%', padding: '0.85rem', background: '#ff4a00', color: '#fff', border: 'none', borderRadius: '8px', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', marginBottom: '1rem' }}
+          >
+            Log In
+          </button>
+          <button 
+            onClick={() => window.location.hash = ''}
+            style={{ width: '100%', padding: '0.85rem', background: 'transparent', color: '#6b7280', border: '1px solid #d1d5db', borderRadius: '8px', fontSize: '1rem', fontWeight: 600, cursor: 'pointer' }}
+          >
+            Back to Website
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="admin-portal" style={{ minHeight: '100vh', background: '#f4f5f7', display: 'flex' }}>

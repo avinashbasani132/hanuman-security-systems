@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext';
 const AuthModal = () => {
   const { showLoginModal, setShowLoginModal, login, signup, loginWithOTP, verifyOTP } = useAuth();
   
-  const [authMethod, setAuthMethod] = useState('phone'); // 'phone' | 'email'
+  const [authMethod, setAuthMethod] = useState('email'); // 'phone' | 'email'
   const [step, setStep] = useState('phone_input'); // 'phone_input' | 'otp_input'
   
   // Form State
@@ -29,7 +29,7 @@ const AuthModal = () => {
       setEmail('');
       setPassword('');
       setStep('phone_input');
-      setAuthMethod('phone');
+      setAuthMethod('email');
     } else {
       document.body.style.overflow = 'auto';
     }

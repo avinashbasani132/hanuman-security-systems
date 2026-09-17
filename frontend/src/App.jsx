@@ -33,6 +33,7 @@ function App() {
   if (currentHash === '#admin') {
     return (
       <AuthProvider>
+        <AuthModal />
         <AdminPortal />
       </AuthProvider>
     );
