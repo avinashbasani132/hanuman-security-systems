@@ -54,12 +54,23 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const signup = async (email, password) => {
-    const { data, error } = await supabase.auth.signUp({
-      email,
-      password,
-    });
-    if (error) throw error;
-    return data;
+    try {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+      if (error) throw error;
+      return data;
+    } catch (err) {
+      console.warn("Supabase signup failed, using local fallback", err);
+      const users = JSON.parse(localStorage.getItem('mock_users') || '[]');
+      if (users.find(u => u.email === email)) {
+        throw new Error("User already exists.");
+      }
+      users.push({ email, password, id: 'local-' + Date.now() });
+      localStorage.setItem('mock_users', JSON.stringify(users));
+      return { user: { email } };
+    }
   };
 
   const login = async (email, password) => {
@@ -72,12 +83,26 @@ export const AuthProvider = ({ children }) => {
       return { user: mockUser };
     }
 
-    const { data, error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
-    if (error) throw error;
-    return data;
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      if (error) throw error;
+      return data;
+    } catch (err) {
+      console.warn("Supabase login failed, using local fallback", err);
+      const users = JSON.parse(localStorage.getItem('mock_users') || '[]');
+      const localUser = users.find(u => u.email === email && u.password === password);
+      if (localUser) {
+        const mockUser = { email: localUser.email, id: localUser.id };
+        localStorage.setItem('mock_user', JSON.stringify(mockUser));
+        setUser(mockUser);
+        setSession({ user: mockUser });
+        return { user: mockUser };
+      }
+      throw err;
+    }
   };
 
   const logout = async () => {
