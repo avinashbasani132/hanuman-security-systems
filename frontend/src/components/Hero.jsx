@@ -52,18 +52,16 @@ const Hero = () => {
           <div className="animate-fade-in">
             {/* badge */}
             <div className="hero-badge" style={{
-              display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+              display: 'inline-flex', alignItems: 'center', gap: '0.6rem',
               background: 'rgba(255,74,0,0.08)',
               border: '1px solid rgba(255,74,0,0.2)',
               borderRadius: '999px',
-              padding: '0.35rem 1rem',
+              padding: '0.4rem 1.2rem',
               marginBottom: '1.5rem',
               maxWidth: '100%',
-              flexWrap: 'wrap',
-              justifyContent: 'center',
             }}>
-              <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#ff4a00', display: 'inline-block', animation: 'pulse 2s infinite', flexShrink: 0 }} />
-              <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#ff4a00', letterSpacing: '0.05em', textTransform: 'uppercase', textAlign: 'center' }}>
+              <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ff4a00', display: 'inline-block', animation: 'pulse 2s infinite', flexShrink: 0 }} />
+              <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#ff4a00', letterSpacing: '0.06em', textTransform: 'uppercase', textAlign: 'left', lineHeight: 1.4 }}>
                 Professional CCTV Installation — Hyderabad
               </span>
             </div>

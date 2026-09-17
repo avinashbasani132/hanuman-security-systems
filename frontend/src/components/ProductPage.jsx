@@ -11,7 +11,7 @@ const BRAND_COLORS = {
 };
 
 const ProductPage = ({ model }) => {
-  const { allProducts, cart, updateQuantity, openCustomerForm } = useCart();
+  const { allProducts, cart, updateQuantity, addToCart, toggleCart } = useCart();
   const [activeImgIdx, setActiveImgIdx] = useState(0);
   const [view360, setView360] = useState(false);
 
@@ -37,12 +37,23 @@ const ProductPage = ({ model }) => {
   const bc = BRAND_COLORS[product.brand] || '#ff4a00';
 
   return (
-    <div className="product-page-container" style={{ background: '#f8f9fc', minHeight: '80vh' }}>
-      <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+    <div className="product-page-container" style={{ background: '#f8f9fc', minHeight: '80vh', paddingTop: '100px', paddingBottom: '4rem' }}>
+      <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 1rem' }}>
         
-        <a href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', textDecoration: 'none', fontWeight: '600', marginBottom: '2rem', transition: 'color 0.2s', background: '#fff', padding: '0.5rem 1rem', borderRadius: '8px', border: '1px solid #e5e7eb', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }} onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--accent-color)'; e.currentTarget.style.borderColor = 'var(--accent-color)'; }} onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.borderColor = '#e5e7eb'; }}>
-          <span style={{ fontSize: '1.2rem' }}>←</span> Back to Home
-        </a>
+        <button 
+          onClick={() => {
+            if (window.history.length > 1 && document.referrer.includes(window.location.host)) {
+              window.history.back();
+            } else {
+              window.location.hash = '';
+            }
+          }}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', textDecoration: 'none', fontWeight: '600', marginBottom: '2rem', transition: 'color 0.2s', background: '#fff', padding: '0.5rem 1rem', borderRadius: '8px', border: '1px solid #e5e7eb', boxShadow: '0 2px 4px rgba(0,0,0,0.05)', cursor: 'pointer' }} 
+          onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--accent-color)'; e.currentTarget.style.borderColor = 'var(--accent-color)'; }} 
+          onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.borderColor = '#e5e7eb'; }}
+        >
+          <span style={{ fontSize: '1.2rem' }}>←</span> Go Back
+        </button>
 
         <div className="product-detail-card" style={{ background: '#fff', borderRadius: '24px', boxShadow: '0 10px 40px rgba(0,0,0,0.06)', border: '1px solid #f0f0f0' }}>
           <div className="product-detail-split" style={{ display: 'flex', flexWrap: 'wrap' }}>
@@ -120,7 +131,7 @@ const ProductPage = ({ model }) => {
                 </div>
               ) : (
                 <button 
-                  onClick={() => openCustomerForm(product)}
+                  onClick={() => { addToCart(product); }}
                   style={{
                     background: 'var(--accent-color)', color: '#fff',
                     border: 'none', padding: '1rem 2rem', borderRadius: '12px',
@@ -156,14 +167,14 @@ const ProductPage = ({ model }) => {
 
         {/* Similar Products (Recommendations) */}
         {(() => {
-          const recommendations = allProducts.filter(p => p.brand === product.brand && p.model !== product.model).slice(0, 4);
+          const recommendations = allProducts.filter(p => p.brand === product.brand && p.model !== product.model).slice(0, 8);
           if (recommendations.length === 0) return null;
           return (
             <div style={{ borderTop: '1px solid #f0f0f0', paddingTop: '2rem', marginTop: '3rem' }}>
               <h4 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem', fontSize: '1.4rem', fontWeight: 800 }}>Similar Products from {product.brand}</h4>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
+              <div className="recommendations-slider" style={{ display: 'flex', gap: '1rem', overflowX: 'auto', paddingBottom: '1rem', scrollbarWidth: 'none', msOverflowStyle: 'none', scrollSnapType: 'x mandatory' }}>
                 {recommendations.map((rec, i) => (
-                  <div key={i} onClick={() => window.location.hash = `#product/${encodeURIComponent(rec.model)}`} style={{ background: '#fff', border: '1px solid #e5e7eb', borderRadius: '12px', padding: '1rem', cursor: 'pointer', transition: 'all 0.2s', display: 'flex', flexDirection: 'column' }} onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 10px 20px rgba(0,0,0,0.08)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
+                  <div key={i} onClick={() => window.location.hash = `#product/${encodeURIComponent(rec.model)}`} style={{ flex: '0 0 200px', scrollSnapAlign: 'start', background: '#fff', border: '1px solid #e5e7eb', borderRadius: '12px', padding: '1rem', cursor: 'pointer', transition: 'all 0.2s', display: 'flex', flexDirection: 'column' }} onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 10px 20px rgba(0,0,0,0.08)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
                     <div style={{ background: '#f8f9fc', borderRadius: '8px', padding: '1rem', marginBottom: '1rem', aspectRatio: '1/1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                       {rec.images && rec.images[0] ? (
                         <img src={rec.images[0]} alt={rec.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
@@ -173,12 +184,38 @@ const ProductPage = ({ model }) => {
                     </div>
                     <h5 style={{ fontSize: '0.9rem', color: 'var(--text-primary)', margin: '0 0 0.3rem', fontWeight: 700, lineHeight: 1.3 }}>{rec.name}</h5>
                     <p style={{ fontSize: '0.8rem', color: bc, fontWeight: 600, margin: '0 0 0.5rem' }}>{rec.model}</p>
-                    <span style={{ fontSize: '1rem', fontWeight: 800, color: '#111827', marginTop: 'auto' }}>
-                      {rec.price ? `₹${rec.price.toLocaleString('en-IN')}` : 'Price on Request'}
-                    </span>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 'auto', gap: '0.5rem' }}>
+                      <span style={{ fontSize: '1rem', fontWeight: 800, color: '#111827' }}>
+                        {rec.price ? `₹${rec.price.toLocaleString('en-IN')}` : 'Price on Request'}
+                      </span>
+                      {(() => {
+                        const cartItem = cart.find(c => c.model === rec.model);
+                        const qty = cartItem ? cartItem.quantity : 0;
+                        return qty > 0 ? (
+                          <div style={{ display: 'flex', alignItems: 'center', background: 'var(--accent-color)', borderRadius: '6px', padding: '0.15rem' }}>
+                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(rec.model, qty - 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer', width: '24px', height: '24px', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>-</button>
+                            <span style={{ fontWeight: 'bold', color: '#fff', fontSize: '0.85rem', margin: '0 0.4rem' }}>{qty}</span>
+                            <button onClick={(e) => { e.stopPropagation(); updateQuantity(rec.model, qty + 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer', width: '24px', height: '24px', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
+                          </div>
+                        ) : (
+                          <button 
+                            className="btn btn-primary" 
+                            style={{ padding: '0.4rem 0.6rem', fontSize: '0.75rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem', borderRadius: '6px' }}
+                            onClick={(e) => { e.stopPropagation(); addToCart(rec); }}
+                          >
+                            Add 🛒
+                          </button>
+                        );
+                      })()}
+                    </div>
                   </div>
                 ))}
               </div>
+              <style>{`
+                .recommendations-slider::-webkit-scrollbar {
+                  display: none;
+                }
+              `}</style>
             </div>
           );
         })()}

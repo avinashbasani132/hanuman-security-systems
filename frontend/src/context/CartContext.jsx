@@ -16,9 +16,8 @@ export const CartProvider = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
-  // ── Customer Details Modal state ──────────────────────────────────────────
-  const [showCustomerForm, setShowCustomerForm] = useState(false);
-  const [pendingProduct,   setPendingProduct]   = useState(null);
+  // ── Checkout Modal state ──────────────────────────────────────────
+  const [showCheckoutForm, setShowCheckoutForm] = useState(false);
   const [selectedProduct,  setSelectedProduct]  = useState(null);
 
   const allProducts = useMemo(() => {
@@ -48,33 +47,6 @@ export const CartProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('cctv_customer', JSON.stringify(customerDetails));
   }, [customerDetails]);
-
-  // Open customer form with the product that triggered it
-  const openCustomerForm = (product) => {
-    // If customer details are already collected, bypass the form
-    if (customerDetails && customerDetails.name && customerDetails.phone) {
-      addToCart(product);
-      return;
-    }
-    setPendingProduct(product);
-    setShowCustomerForm(true);
-  };
-
-  // Called when the customer submits the form — actually adds product to cart
-  const confirmAddToCart = () => {
-    if (!pendingProduct) return;
-    setCart((prev) => {
-      const existing = prev.find(item => item.model === pendingProduct.model);
-      if (existing) {
-        return prev.map(item =>
-          item.model === pendingProduct.model ? { ...item, quantity: item.quantity + 1 } : item
-        );
-      }
-      return [...prev, { ...pendingProduct, quantity: 1 }];
-    });
-    setPendingProduct(null);
-    setShowCustomerForm(false);
-  };
 
   const addToCart = (product) => {
     setCart((prev) => {
@@ -112,8 +84,7 @@ export const CartProvider = ({ children }) => {
     <CartContext.Provider value={{
       cart, addToCart, removeFromCart, updateQuantity, clearCart, cartCount,
       isCartOpen, toggleCart,
-      showCustomerForm, setShowCustomerForm, customerDetails, setCustomerDetails,
-      openCustomerForm, confirmAddToCart, pendingProduct, setPendingProduct,
+      showCheckoutForm, setShowCheckoutForm, customerDetails, setCustomerDetails,
       searchQuery, setSearchQuery,
       allProducts, selectedProduct, setSelectedProduct
     }}>

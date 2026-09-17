@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useCart } from '../context/CartContext';
+import { useAuth } from '../context/AuthContext';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -8,6 +9,8 @@ const Header = () => {
   const searchRef = useRef(null);
   
   const { toggleCart, cartCount, searchQuery, setSearchQuery, allProducts, setSelectedProduct } = useCart();
+  const { user, logout, setShowLoginModal } = useAuth();
+  const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
 
   const suggestions = useMemo(() => {
     if (!searchQuery || !searchQuery.trim() || !allProducts) return [];
@@ -158,7 +161,33 @@ const Header = () => {
               </span>
             )}
           </button>
-          <a href="#contact" className="btn btn-primary" style={{ padding: '0.5rem 1.5rem' }}>
+          
+          {user ? (
+            <div style={{ position: 'relative' }}>
+              <button onClick={() => setProfileDropdownOpen(!profileDropdownOpen)} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.4rem', display: 'flex', alignItems: 'center' }}>
+                👤
+              </button>
+              {profileDropdownOpen && (
+                <div style={{ position: 'absolute', top: '100%', right: 0, marginTop: '0.5rem', background: '#fff', border: '1px solid #e5e7eb', borderRadius: '12px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', padding: '0.5rem', display: 'flex', flexDirection: 'column', gap: '0.2rem', zIndex: 1001, minWidth: '180px' }}>
+                  <div style={{ padding: '0.5rem', fontSize: '0.75rem', color: '#6b7280', borderBottom: '1px solid #f3f4f6', wordBreak: 'break-all', marginBottom: '0.2rem' }}>
+                    Signed in as<br/><strong style={{ color: '#111827' }}>{user.email}</strong>
+                  </div>
+                  <a href="#orders" onClick={() => setProfileDropdownOpen(false)} style={{ padding: '0.6rem', textDecoration: 'none', color: '#111827', fontWeight: 600, fontSize: '0.9rem', borderRadius: '8px', transition: 'background 0.2s', display: 'flex', alignItems: 'center', gap: '0.5rem' }} onMouseEnter={e => e.currentTarget.style.background = '#f9fafb'} onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
+                    📦 My Orders
+                  </a>
+                  <button onClick={() => { logout(); setProfileDropdownOpen(false); }} style={{ padding: '0.6rem', textDecoration: 'none', color: '#ef4444', fontWeight: 600, fontSize: '0.9rem', borderRadius: '8px', border: 'none', background: 'none', cursor: 'pointer', textAlign: 'left', transition: 'background 0.2s', display: 'flex', alignItems: 'center', gap: '0.5rem' }} onMouseEnter={e => e.currentTarget.style.background = '#fef2f2'} onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
+                    🚪 Logout
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <button onClick={() => setShowLoginModal(true)} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.4rem', display: 'flex', alignItems: 'center' }} title="Log In / Sign Up">
+              👤
+            </button>
+          )}
+
+          <a href="#contact" className="btn btn-primary quote-btn" style={{ padding: '0.5rem 1.5rem' }}>
             Get a Quote
           </a>
           <button
@@ -195,6 +224,7 @@ const Header = () => {
         .mobile-menu-btn { display: none; }
         @media (max-width: 768px) {
           .desktop-search { display: none; }
+          .quote-btn { display: none !important; }
           .mobile-menu-btn { display: block; }
         }
       `}</style>

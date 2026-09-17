@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { supabase } from '../utils/supabase';
 
 /* ── Static fallback reviews ─────────────────────────────────────────── */
@@ -145,7 +146,6 @@ const AddReviewModal = ({ onClose, onSubmitted }) => {
     if (!form.name.trim())         e.name         = 'Please enter your name';
     if (!form.service_type)        e.service_type = 'Please select a service type';
     if (!form.rating)              e.rating       = 'Please select a star rating';
-    if (form.review.trim().length < 20) e.review  = 'Please write at least 20 characters';
     return e;
   };
 
@@ -199,7 +199,7 @@ const AddReviewModal = ({ onClose, onSubmitted }) => {
     <span style={{ fontSize: '0.73rem', color: '#ef4444', fontWeight: 600, marginTop: '0.2rem', display: 'block' }}>⚠ {errors[field]}</span>
   ) : null;
 
-  return (
+  return createPortal(
     <>
       <style>{`
         @keyframes revModalIn {
@@ -285,7 +285,7 @@ const AddReviewModal = ({ onClose, onSubmitted }) => {
 
                 {/* Review text */}
                 <div>
-                  {label('Your Review', true)}
+                  {label('Your Review (Optional)', false)}
                   <textarea
                     className="rev-ta"
                     style={{ ...inputStyle(errors.review), minHeight:110, resize:'vertical' }}
@@ -295,7 +295,6 @@ const AddReviewModal = ({ onClose, onSubmitted }) => {
                   />
                   <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
                     {errMsg('review')}
-                    <span style={{ fontSize:'0.7rem', color: form.review.length < 20 ? '#ef4444' : '#94a3b8', marginLeft:'auto' }}>{form.review.length} / 20 min</span>
                   </div>
                 </div>
 
@@ -319,7 +318,8 @@ const AddReviewModal = ({ onClose, onSubmitted }) => {
           </div>
         </div>
       </div>
-    </>
+    </>,
+    document.body
   );
 };
 

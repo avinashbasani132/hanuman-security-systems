@@ -1,89 +1,25 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
+import { useAuth } from '../context/AuthContext';
 import { supabase } from '../utils/supabase';
 
 const Cart = () => {
-  const { cart, isCartOpen, toggleCart, removeFromCart, updateQuantity, clearCart, customerDetails, setShowCustomerForm } = useCart();
+  const { cart, isCartOpen, toggleCart, removeFromCart, updateQuantity, clearCart, customerDetails, setShowCheckoutForm } = useCart();
+  const { user, setShowLoginModal } = useAuth();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
   const [orderSuccess, setOrderSuccess] = useState(false);
 
   if (!isCartOpen) return null;
 
-  const handleCheckout = async () => {
+  const handleCheckout = () => {
     if (cart.length === 0) return;
-    
-    // Fallback validation just in case
-    const { name, phone, address } = customerDetails;
-    if (!name || !phone || !address) {
-      setErrorMsg('Please click "Edit Details" and fill in your info.');
+    if (!user) {
+      setShowLoginModal(true);
       return;
     }
-    
-    setIsSubmitting(true);
-    setErrorMsg('');
-
-    try {
-      // 1. Save to Supabase
-      const { error } = await supabase
-        .from('orders')
-        .insert([
-          { 
-            customer_name: customerDetails.name, 
-            contact_no: customerDetails.phone, 
-            address: `${customerDetails.address}, ${customerDetails.city} - ${customerDetails.pincode}`, 
-            items: cart 
-          }
-        ]);
-
-      if (error) {
-        console.error("Error saving order to DB, saving locally instead:", error);
-        // Fallback to local storage if DB is not set up / blocked
-        const localOrders = JSON.parse(localStorage.getItem('cctv_local_orders') || '[]');
-        localOrders.push({
-          id: Date.now(),
-          created_at: new Date().toISOString(),
-          customer_name: customerDetails.name,
-          contact_no: customerDetails.phone,
-          address: `${customerDetails.address}, ${customerDetails.city} - ${customerDetails.pincode}`,
-          items: cart
-        });
-        localStorage.setItem('cctv_local_orders', JSON.stringify(localOrders));
-      }
-
-      // 2. Open WhatsApp with pre-filled text
-      const phoneNumber = "919014612983"; // Target WhatsApp Number
-      
-      let message = `*NEW ORDER* from Hanuman Enterprises Website\n\n`;
-      message += `*Customer Details:*\n`;
-      message += `Name: ${customerDetails.name}\n`;
-      message += `Contact No: ${customerDetails.phone}\n`;
-      if (customerDetails.email) message += `Email: ${customerDetails.email}\n`;
-      message += `Address: ${customerDetails.address}, ${customerDetails.city} - ${customerDetails.pincode}\n`;
-      if (customerDetails.landmark) message += `Landmark: ${customerDetails.landmark}\n`;
-      message += `\n*Order Summary:*\n`;
-      
-      let cartTotal = 0;
-      cart.forEach(item => {
-        const itemTotal = (item.price || 0) * item.quantity;
-        cartTotal += itemTotal;
-        message += `- ${item.brand} ${item.model} (Qty: ${item.quantity}) - ₹${itemTotal.toLocaleString('en-IN')}\n`;
-      });
-      message += `\n*Total Estimated Amount: ₹${cartTotal.toLocaleString('en-IN')}*\n`;
-
-      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-      window.open(whatsappUrl, '_blank');
-
-      // Order saved successfully
-      setOrderSuccess(true);
-      clearCart();
-
-    } catch (err) {
-      console.error("Checkout failed:", err);
-      setErrorMsg('An error occurred. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
+    setShowCheckoutForm(true);
+    toggleCart(); // Close the cart drawer when opening checkout modal
   };
 
   return (
@@ -145,18 +81,8 @@ const Cart = () => {
                 </div>
                 {errorMsg && <p style={{ color: '#ef4444', fontSize: '0.85rem', marginBottom: '0.8rem', textAlign: 'center', fontWeight: 'bold' }}>{errorMsg}</p>}
                 
-                {/* Display Saved Customer Details */}
-                <div className="saved-details">
-                  <div className="saved-details-header">
-                    <h4>Billing Details</h4>
-                    <button className="edit-details-btn" onClick={() => setShowCustomerForm(true)}>Edit Details</button>
-                  </div>
-                  <p><strong>{customerDetails.name}</strong> ({customerDetails.phone})</p>
-                  <p>{customerDetails.address}, {customerDetails.city} - {customerDetails.pincode}</p>
-                </div>
-
                 <button onClick={handleCheckout} disabled={isSubmitting} className="btn btn-primary checkout-btn">
-                  {isSubmitting ? 'Processing...' : 'Place Order'}
+                  Proceed to Checkout ➔
                 </button>
                 <button onClick={clearCart} className="clear-cart-btn">Clear Cart</button>
               </div>

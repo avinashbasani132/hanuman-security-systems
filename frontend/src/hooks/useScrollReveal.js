@@ -27,21 +27,35 @@ const useScrollReveal = () => {
       }
     );
 
-    // Observe all current [data-sr] elements
-    const observe = () => {
-      document.querySelectorAll('[data-sr]').forEach((el) => {
-        observer.observe(el);
+    const observeNodes = (nodes) => {
+      nodes.forEach(node => {
+        if (node.nodeType === 1) { // ELEMENT_NODE
+          if (node.hasAttribute('data-sr')) {
+            observer.observe(node);
+          }
+          const children = node.querySelectorAll('[data-sr]');
+          children.forEach(child => observer.observe(child));
+        }
       });
     };
 
-    observe();
+    // Observe all current [data-sr] elements
+    observeNodes([document.body]);
 
-    // Also observe after a short delay to catch dynamically rendered elements
-    const timer = setTimeout(observe, 400);
+    // Use MutationObserver to catch dynamically added elements
+    const mutationObserver = new MutationObserver((mutations) => {
+      mutations.forEach(mutation => {
+        if (mutation.addedNodes.length) {
+          observeNodes(mutation.addedNodes);
+        }
+      });
+    });
+
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
 
     return () => {
       observer.disconnect();
-      clearTimeout(timer);
+      mutationObserver.disconnect();
     };
   }, []);
 };

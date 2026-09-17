@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CartProvider } from './context/CartContext';
+import { AuthProvider } from './context/AuthContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -11,10 +12,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import Cart from './components/Cart';
-import CustomerFormModal from './components/CustomerFormModal';
+import CheckoutModal from './components/CheckoutModal';
+import AuthModal from './components/AuthModal';
 import AdminPortal from './components/AdminPortal';
 import ProductPage from './components/ProductPage';
 import BrandPage from './components/BrandPage';
+import MyOrders from './components/MyOrders';
 import useScrollReveal from './hooks/useScrollReveal';
 
 function App() {
@@ -28,87 +31,116 @@ function App() {
   }, []);
 
   if (currentHash === '#admin') {
-    return <AdminPortal />;
+    return (
+      <AuthProvider>
+        <AdminPortal />
+      </AuthProvider>
+    );
+  }
+
+  if (currentHash === '#orders') {
+    return (
+      <AuthProvider>
+        <CartProvider>
+          <div className="app">
+            <Header />
+            <Cart />
+            <CheckoutModal />
+            <AuthModal />
+            <MyOrders />
+            <Footer />
+          </div>
+        </CartProvider>
+      </AuthProvider>
+    );
   }
 
   if (currentHash.startsWith('#product/')) {
     const model = decodeURIComponent(currentHash.replace('#product/', ''));
     return (
-      <CartProvider>
-        <div className="app">
-          <Header />
-          <Cart />
-          <CustomerFormModal />
-          <ProductPage model={model} />
-          <Footer />
-        </div>
-      </CartProvider>
+      <AuthProvider>
+        <CartProvider>
+          <div className="app">
+            <Header />
+            <Cart />
+            <CheckoutModal />
+            <AuthModal />
+            <ProductPage model={model} />
+            <Footer />
+          </div>
+        </CartProvider>
+      </AuthProvider>
     );
   }
 
   if (currentHash.startsWith('#brand/')) {
     const brand = decodeURIComponent(currentHash.replace('#brand/', ''));
     return (
-      <CartProvider>
-        <div className="app">
-          <Header />
-          <Cart />
-          <CustomerFormModal />
-          <BrandPage brand={brand} />
-          <Footer />
-        </div>
-      </CartProvider>
+      <AuthProvider>
+        <CartProvider>
+          <div className="app">
+            <Header />
+            <Cart />
+            <CheckoutModal />
+            <AuthModal />
+            <BrandPage brand={brand} />
+            <Footer />
+          </div>
+        </CartProvider>
+      </AuthProvider>
     );
   }
 
   return (
-    <CartProvider>
-      <div className="app">
-        <Header />
-        <Cart />
-        <CustomerFormModal />
-        <main>
-          {/* Hero — no sr, it's above the fold */}
-          <Hero />
+    <AuthProvider>
+      <CartProvider>
+        <div className="app">
+          <Header />
+          <Cart />
+          <CheckoutModal />
+          <AuthModal />
+          <main>
+            {/* Hero — no sr, it's above the fold */}
+            <Hero />
 
-          {/* Features */}
+            {/* Features */}
+            <div data-sr="fade-up">
+              <Features />
+            </div>
+
+            {/* Products */}
+            <div data-sr="fade-up" data-sr-delay="1">
+              <Products />
+            </div>
+
+            {/* Solutions */}
+            <div data-sr="fade-left">
+              <Solutions />
+            </div>
+
+            {/* Testimonials */}
+            <div data-sr="zoom-up">
+              <Testimonials />
+            </div>
+
+            {/* FAQ */}
+            <div data-sr="fade-right">
+              <FAQ />
+            </div>
+
+            {/* Contact */}
+            <div data-sr="fade-up">
+              <Contact />
+            </div>
+          </main>
           <div data-sr="fade-up">
-            <Features />
+            <Footer />
           </div>
-
-          {/* Products */}
-          <div data-sr="fade-up" data-sr-delay="1">
-            <Products />
-          </div>
-
-          {/* Solutions */}
-          <div data-sr="fade-left">
-            <Solutions />
-          </div>
-
-          {/* Testimonials */}
-          <div data-sr="zoom-up">
-            <Testimonials />
-          </div>
-
-          {/* FAQ */}
-          <div data-sr="fade-right">
-            <FAQ />
-          </div>
-
-          {/* Contact */}
-          <div data-sr="fade-up">
-            <Contact />
-          </div>
-        </main>
-        <div data-sr="fade-up">
-          <Footer />
+          <WhatsAppButton />
         </div>
-        <WhatsAppButton />
-      </div>
-    </CartProvider>
+      </CartProvider>
+    </AuthProvider>
   );
 }
 
 export default App;
-

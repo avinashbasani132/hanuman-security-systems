@@ -11,7 +11,7 @@ const BRAND_META = {
 };
 
 const BrandPage = ({ brand }) => {
-  const { allProducts } = useCart();
+  const { allProducts, cart, addToCart, toggleCart, updateQuantity } = useCart();
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -82,11 +82,33 @@ const BrandPage = ({ brand }) => {
                     <p style={{ fontSize: '0.8rem', color: col, fontWeight: 600, marginBottom: '0.5rem' }}>{item.model}</p>
                     <p className="product-card-desc" style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', flex: 1, lineHeight: 1.55 }}>{item.desc}</p>
                     
-                    {/* Price */}
-                    <div style={{ display: 'flex', alignItems: 'center', marginTop: '1rem' }}>
+                    {/* Price and Add Button */}
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 'auto', gap: '0.5rem', flexWrap: 'wrap' }}>
                       <span style={{ fontSize: '1.15rem', fontWeight: 800, color: '#111827' }}>
                         {item.price ? `₹${item.price.toLocaleString('en-IN')}` : 'Price on Request'}
                       </span>
+
+                      <div style={{ display: 'flex', gap: '0.5rem' }}>
+                        {(() => {
+                          const cartItem = cart.find(c => c.model === item.model);
+                          const qty = cartItem ? cartItem.quantity : 0;
+                          return qty > 0 ? (
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'var(--accent-color)', borderRadius: '8px', padding: '0.2rem' }}>
+                              <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty - 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', width: '30px', height: '30px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>-</button>
+                              <span style={{ fontWeight: 'bold', color: '#fff', fontSize: '0.95rem', margin: '0 0.5rem' }}>{qty}</span>
+                              <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.model, qty + 1); }} style={{ background: 'rgba(255,255,255,0.25)', border: 'none', color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', cursor: 'pointer', width: '30px', height: '30px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
+                            </div>
+                          ) : (
+                            <button 
+                              className="btn btn-primary" 
+                              style={{ padding: '0.55rem 0.8rem', fontSize: '0.82rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem', borderRadius: '8px' }}
+                              onClick={(e) => { e.stopPropagation(); addToCart(item); }}
+                            >
+                              Add 🛒
+                            </button>
+                          );
+                        })()}
+                      </div>
                     </div>
                   </div>
                 </div>
