@@ -21,9 +21,13 @@ export const AuthProvider = ({ children }) => {
         // Check for mock user bypass
         const mockUser = localStorage.getItem('mock_user');
         if (mockUser) {
-          const parsed = JSON.parse(mockUser);
-          setSession({ user: parsed });
-          setUser(parsed);
+          try {
+            const parsed = JSON.parse(mockUser);
+            setSession({ user: parsed });
+            setUser(parsed);
+          } catch (e) {
+            localStorage.removeItem('mock_user');
+          }
         }
       }
       setLoading(false);
@@ -31,9 +35,13 @@ export const AuthProvider = ({ children }) => {
       // If supabase is completely unconfigured
       const mockUser = localStorage.getItem('mock_user');
       if (mockUser) {
-        const parsed = JSON.parse(mockUser);
-        setSession({ user: parsed });
-        setUser(parsed);
+        try {
+          const parsed = JSON.parse(mockUser);
+          setSession({ user: parsed });
+          setUser(parsed);
+        } catch (e) {
+          localStorage.removeItem('mock_user');
+        }
       }
       setLoading(false);
     });
