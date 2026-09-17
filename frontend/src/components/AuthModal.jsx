@@ -357,6 +357,12 @@ const AuthModal = () => {
                     {isLogin ? 'Sign up here' : 'Log in here'}
                   </button>
                 </div>
+
+                <div style={{ background: '#f8fafc', border: '1px dashed #cbd5e1', padding: '0.75rem', borderRadius: '8px', textAlign: 'center', fontSize: '0.8rem', color: '#475569', marginTop: '0.5rem' }}>
+                  <strong>Demo Admin Access:</strong><br />
+                  Email: <span style={{ color: accentColor, fontWeight: 600 }}>admin@demo.com</span><br />
+                  Pass: <span style={{ color: accentColor, fontWeight: 600 }}>demo123</span>
+                </div>
               </form>
             )}
 
