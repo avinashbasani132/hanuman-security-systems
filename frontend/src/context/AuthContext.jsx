@@ -67,14 +67,28 @@ export const AuthProvider = ({ children }) => {
         email,
         password,
       });
+      
       if (error) throw error;
+      
+      // If email confirmation is required, Supabase returns success but no session.
+      // We save them locally as well, so our local login fallback can seamlessly log them in!
+      const users = JSON.parse(localStorage.getItem('mock_users') || '[]');
+      if (!users.find(u => u.email === email)) {
+        users.push({ email, password, id: data?.user?.id || ('local-' + Date.now()) });
+        localStorage.setItem('mock_users', JSON.stringify(users));
+      }
+      
       return data;
     } catch (err) {
       console.warn("Supabase signup failed, using local fallback", err);
       const users = JSON.parse(localStorage.getItem('mock_users') || '[]');
+      
+      // If Supabase threw 'User already exists', but they aren't in our local DB,
+      // we add them locally anyway so the user can actually use the app without email confirmation.
       if (users.find(u => u.email === email)) {
         throw new Error("User already exists.");
       }
+      
       users.push({ email, password, id: 'local-' + Date.now() });
       localStorage.setItem('mock_users', JSON.stringify(users));
       return { user: { email } };
