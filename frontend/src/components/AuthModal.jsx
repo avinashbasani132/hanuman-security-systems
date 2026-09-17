@@ -88,10 +88,20 @@ const AuthModal = () => {
         await login(email, password);
         setShowLoginModal(false);
       } else {
-        await signup(email, password);
-        setSuccess('Account created! You can now log in.');
-        setIsLogin(true);
-        setPassword('');
+        try {
+          await signup(email, password);
+          // Automatically log in after successful signup
+          await login(email, password);
+          setShowLoginModal(false);
+        } catch (signupErr) {
+          // If the user already exists, try logging them in directly instead of throwing an error
+          if (signupErr.message === 'User already exists.' || (signupErr.message && signupErr.message.toLowerCase().includes('already registered'))) {
+            await login(email, password);
+            setShowLoginModal(false);
+          } else {
+            throw signupErr;
+          }
+        }
       }
     } catch (err) {
       setError(err.message || 'An error occurred during authentication.');
